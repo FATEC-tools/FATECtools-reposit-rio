@@ -1,0 +1,64 @@
+ /* estilos do site e da pesquisa */
+ main {
+   padding: 5%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ form {
+   width: 80%;
+   max-width: 600px;
+   margin-top: 5rem;
+   margin-bottom: 15px;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ main h2 {
+   font-size: 30px;
+   font-weight: 400;
+ }
+
+ main h3 {
+   font-size: 20px;
+   font-weight: 400;
+ }
+
+ /* pesquisar */
+ form.example input[type=text] {
+   padding: 10px;
+   font-size: 17px;
+   border: 1px solid rgb(255, 255, 255);
+   float: left;
+   width: 90%;
+   background: #f1f1f1;
+   border-radius: 20vh 0 0 20vh;
+ }
+
+ form.example button {
+   float: left;
+   width: 10%;
+   padding: 10px;
+   background: #BA2221;
+   color: white;
+   font-size: 17px;
+   border: 1px solid rgb(255, 255, 255);
+   border-left: none;
+   cursor: pointer;
+   border-radius: 0 20vh 20vh 0;
+ }
+
+ form.example button:hover {
+   background: #ac242b;
+ }
+
+ /* Clear floats */
+ form.example::after {
+   content: "";
+   clear: both;
+   display: table;
+ }

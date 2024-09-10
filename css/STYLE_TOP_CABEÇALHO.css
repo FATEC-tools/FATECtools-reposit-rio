@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ESTILO GERAL - FUNDO E CENTRALIZAÇÃO */
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(180deg, #2b3a72 69%, #040518 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+    border-radius: 2vh;
+}
+
+body::-webkit-scrollbar-track {
+    background: #040518;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9c1c1c;
+    border-radius: 2vh;
+    transition: .2s;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #840c15;
+}
+
+/* ESTILOS PADRÃO PARA O CABEÇALHO DO SITE */
+.topo-nav {
+    width: 100vw;
+    padding: .5% 1%;
+    color: white;
+    background-image: linear-gradient(90deg, #840C15 10%, #BA2221 40%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed; */
+} 
+
+.topo-nav h2 {
+    font-size: 20pt;
+    margin: 0;
+}
+
+.topo-nav h2 span {
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+.topo-nav .nav-geral{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+
+
+.topo-direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#traço {
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+/* botao entrar */
+#perfil-div button {
+    padding: 5% 25%;
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    background-color: #ff000d;
+    color: #fff;
+    font-weight: 100;
+    border: none;
+    border-radius: 30vh;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#perfil-div button:hover {
+    transition: 0.2s;
+    transform: scale(1.02);
+    background: white;
+    color: #840c15;
+
+}
+
+#opcoes {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    /* Adicionando margem à direita para centralizar */
+    margin-left: 20px;
+    /* Adicionando margem à esquerda para centralizar */
+}
+
+#opcoes ul {
+    list-style: none;
+    /* Removendo as bolinhas do ul */
+    margin: 0;
+    /* Removendo margem padrão do ul */
+    padding: 0;
+    /* Removendo preenchimento padrão do ul */
+    display: flex;
+    /* Alinhando os itens na horizontal */
+}
+
+#opcoes li {
+    margin-right: 30px;
+    /* Espaçamento entre os itens */
+}
+
+a {
+    font: normal;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    /* Adicionando transição para o tamanho da fonte */
+}
+
+#opcoes ul li a {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#opcoes a:hover {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+
+#ancora-FATECTOOLS {
+    color: white;
+    text-decoration: none;
+}
+
+/* ESTILOS PADRÃO PARA O RODAPÉ DO SITE */
+.fim-site {
+    background-image: linear-gradient(90deg, #840C15 10%, #BA2221 40%);
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-rodape {
+    display: flex;
+}
+
+.fim-site article {
+    margin: 0 3%;
+    padding: 1%;
+    color: white;
+    width: 31vw;
+}
+
+#traco-branco {
+    border-right: solid 1px white;
+    height: 50vh;
+    align-self: center;
+}
+
+.fim-site h2 {
+    font-size: 30pt;
+    margin: 0;
+}
+
+.fim-site p{
+    font-size: 15px;
+}
+
+.fim-site h2 span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fim-site h3 {
+    font-weight: 500;
+}
+
+.fim-site h5 {
+    font-weight: 200;
+}
+
+.fim-site a {
+    text-decoration: underline;
+}
+
+.fim-site li {
+    list-style: none;
+}
+
+
+/* ESTILO FORM EMAIL */
+.fim-site form {
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: #840c15;
+    padding: 1em;
+    border-radius: 2vh;
+}
+
+.fim-site fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fim-site label,
+.fim-site input,
+.fim-site textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fim-site input, .fim-site textarea{
+    transition: .3s;
+}
+
+.fim-site input,
+.fim-site textarea {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: 0.75em;
+    margin: 0.5em 0 2.5em;
+    color: white;
+    outline: 0;
+}
+
+.fim-site input:invalid:focus,
+.fim-site textarea:invalid:focus {
+    border-bottom: 2px solid #ff000d;
+}
+
+.fim-site input:valid:focus,
+.fim-site textarea:valid:focus {
+    border-bottom: 2px solid #ff000d;
+}
+
+.fim-site input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182);
+}
+
+.fim-site input:focus,
+.fim-site textarea:focus {
+    border-bottom: 2px solid #8e999a;
+    background-color: #182143;
+}
+
+.fim-site legend {
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.3em;
+}
+
+.fim-site .btn {
+    background-color: #ff000d;
+    color: white;
+    border-radius: 30vh;
+    cursor: pointer;
+    padding: 0.7em 2em;
+    font-size: 1.2em;
+    border: none;
+}

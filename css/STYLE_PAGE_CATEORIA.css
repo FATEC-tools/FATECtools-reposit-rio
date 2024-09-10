@@ -1,0 +1,128 @@
+.container{
+  width: 100%;
+  overflow: hidden
+}
+
+.container img{
+  width: 100%;
+  height: 100%;
+}
+
+.techs,
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  border: 2px #FF4D00 solid;
+  width: 17rem;
+  margin-bottom: 1rem;
+}
+
+.tech h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+
+.techs {
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.tool,
+.tech {
+  margin: 2% 6%;
+}
+
+.tool h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+
+.tools a,
+.techs a {
+  margin: 1%;
+}
+
+.card {
+  padding: 3rem;
+  background: #182143;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vh;
+  transition: all 0.4s;
+  color: white;
+}
+
+.skills2 {
+  background: #840c15;
+  padding: 2% 1%;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.9rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #182143;
+  transform: translateY(-10px);
+}
+
+.card2:hover {
+  cursor: pointer;
+  background-color: #ba2221;
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.card2 img {
+  height: 150px;
+  width: 170px;
+}
+
+.card2 p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin: 3% 10%;
+  text-wrap: nowrap;
+}
+
+.card2 span {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.tools .card img {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* arrumar o tamanho da imagem do card dos Livros, deixar igual ao do de Sites/Artigos */
+.card2 {
+  width: 25%;
+  height: 50vh;
+  background: #ed2625;
+  display: flex;
+  flex-direction: column;    
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2vh;
+  transition: all 0.4s;
+  color: white;
+  padding: 2%;
+}

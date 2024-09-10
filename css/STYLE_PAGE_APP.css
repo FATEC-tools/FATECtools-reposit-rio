@@ -1,0 +1,285 @@
+h2 {
+    font-size: 40px;
+}
+
+/* ESTILO AREA DE DOWNLOAD */
+
+.area-download {
+    border-top: solid 2px white;
+    width: 100vw;
+    margin-bottom: 3%;
+    padding: 10px 7px;
+    background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 40%);
+}
+
+.card-instalar {
+    margin: 4% 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-ir-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-instalar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-instalar h2 {
+    text-align: center;
+    margin-bottom: .7%;
+    margin-top: 2%;
+    color: white;
+}
+
+#image-icon-app {
+    height: 250px;
+    width: 250px;
+    border-radius: 2vh;
+    background: #03112c;
+}
+
+.btn-instalar {
+    margin-top: 3%;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.9vh;
+    background: #BA2221;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 50vh;
+    border: solid .1vh white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-instalar:hover {
+    transition: .4s;
+    transform: scale(1.05);
+    background: white;
+    box-shadow: 5px 20px 20px #2205057c;
+    color: red;
+}
+
+.area-imagens {
+    background-color: gray;
+    height: 471px;
+    width: 792px;
+    border-radius: 2vh;
+}
+
+.margem-entre-ele {
+    margin: 0% 5%;
+}
+
+/* fim da area de download */
+
+
+/* ESTILO CARROSSEL DE FOTOS */
+
+/* ESTILOS DA AREA FOTOS ESTA EM "img/STYLE_SLIDES_IMAGEM" */
+
+/* fim area de fotos */
+
+
+
+/* ESTILOS DA AREA DE DESCRIÇAO E AVALIAÇAO */
+.area-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao-avaliacao {
+    background: #BA2221;
+    color: white;
+    padding: 4% 5%;
+    margin: 3% 10%;
+    border-radius: 0.5vw;
+}
+
+.descricao {
+    margin-bottom: 7%;
+}
+
+.descricao h2,
+.avaliacao h2 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.descricao p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.avaliacao {
+    background: #840C15;
+    border: solid white 1px;
+    border-radius: 0.3vw;
+    padding: 2% 1%;
+}
+
+.blocos-avaliacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.blocos-avaliacao::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 2vh;
+}
+
+.blocos-avaliacao::-webkit-scrollbar-track {
+    background: #BA2221;
+}
+
+.blocos-avaliacao::-webkit-scrollbar-thumb {
+    background-color: #9c1c1c;
+    border-radius: 2vh;
+}
+
+.blocos-avaliacao .avaliacao-user {
+    background-color: #BA2221;
+    border: solid 1.5px white;
+    width: 28vw;
+    height: 390px;
+    margin: 10px;
+    padding: 2%;
+    border-radius: 1vh;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blocos-avaliacao .avaliacao-user:hover {
+    transform: scale(1.02);
+    transition: .5s;
+    border-radius: .5vh;
+    box-shadow: 0px 10px 20px #30020593;
+    cursor: pointer;
+}
+
+.img-avalia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-avalia h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.img-avalia img {
+    border-radius: 50vh;
+    height: 100px;
+}
+
+.img-avalia img,
+.img-avalia h2 {
+    margin: 0% 5%;
+}
+
+.avaliacao-user .traco-avalia {
+    border: solid .5px white;
+    width: 50%;
+    margin: 5% 0;
+}
+
+
+
+/* ESTILOS AREA TUTORIAL */
+.area-primeiros-passos {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-primeiros-passos {
+    color: white;
+    background: #25356F;
+    padding: .5% 5%;
+    border-radius: 30vh;
+    border: solid 2px white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.passos-geral {
+    padding: 4% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.passos-left,
+.passos-right {
+    margin: 0 4%;
+}
+
+.passos-right img,
+.passos-left img {
+    height: 471px;
+    width: 792px;
+}
+
+.passos {
+    background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 80%);
+    width: 100vw;
+    border: solid 2px white;
+}
+
+.passos-invert {
+    background-image: linear-gradient(90deg, #840C15 5%, #BA2221 50%);
+    width: 100vw;
+}
+
+.passos-video {
+    width: 100vw;
+    margin-bottom: 4%;
+    padding: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.passos-video h2 {
+    font-size: 30px;
+    margin-left: 4%;
+    font-weight: 400;
+}
+
+#cor {
+    align-self: center;
+    height: 720px;
+    width: 1280px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 2vh;
+    transition: .6s;
+}
+
+#cor:hover {
+    border-radius: 1vh;
+    box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.356);
+}

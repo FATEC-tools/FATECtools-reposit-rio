@@ -1,0 +1,335 @@
+.container {
+  max-width: 100%;
+  background: #BA2221;
+  display: flex;
+  justify-content: center;
+}
+
+.container img {
+  max-width: 40%;
+  /* Para imagens lado a lado, cada uma pode ter no máximo 50% da largura do container */
+  height: auto;
+  /* Para manter a proporção da imagem */
+  float: left;
+  /* Para alinhar as imagens lado a lado */
+  flex: 1;
+}
+
+
+
+/* .display-flex-space-every > img{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+} */
+
+/* .display-flex-space-every{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+}  */
+
+/* .display-flex-start {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 300px;
+}
+
+.display-flex-start > h1{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 400%;
+    text-align: center;
+} */
+
+
+/* site disponíveis */
+
+/* ------------ skills ------------------ */
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.line {
+  border: 2px #FF4D00 solid;
+  width: 17rem;
+  margin-bottom: 1rem;
+}
+
+.tech h2 {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 6.6rem;
+  color: #fff;
+}
+
+.techs {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 80rem;
+  margin-bottom: 5rem;
+}
+
+.tool h2 {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 4.7rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.tools {
+  max-width: 65rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.card {
+  padding: 3rem;
+  background: #182143;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  color: white;
+}
+
+section#skills2.skills2 {
+  background: #840c15;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.9rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #182143;
+  transform: translateY(-10px);
+}
+
+.card2:hover {
+  cursor: pointer;
+  background-color: #ba2221;
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 7rem;
+  height: 7rem;
+}
+
+p {
+  color: #fff;
+}
+
+.tools .card img {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* arrumar o tamanho da imagem do card dos Livros, deixar igual ao do de Sites/Artigos */
+.card2 {
+  padding: 3rem;
+  background: #ed2625;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.9rem;
+}
+
+.card3 {
+  padding: 3rem;
+  background: #182143;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.9rem;
+}
+
+.card3:hover {
+  cursor: pointer;
+  background-color: #182143;
+  transform: translateY(-10px);
+}
+
+
+/* ESTILOS PADRÃO PARA O RODAPÉ DO SITE */
+.fim-site {
+  background-image: linear-gradient(90deg, #840C15 10%, #BA2221 40%);
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-rodape {
+  display: flex;
+}
+
+.fim-site article {
+  margin: 0 3%;
+  padding: 1%;
+  color: white;
+  width: 31vw;
+}
+
+#traco-branco {
+  border-right: solid 1px white;
+  height: 50vh;
+  align-self: center;
+}
+
+.fim-site h2 {
+  font-size: 30pt;
+  margin: 0;
+}
+
+.fim-site p {
+  font-size: 15px;
+}
+
+.fim-site h2 span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fim-site h3 {
+  font-weight: 500;
+}
+
+.fim-site h5 {
+  font-weight: 200;
+}
+
+.fim-site a {
+  text-decoration: underline;
+}
+
+.fim-site li {
+  list-style: none;
+}
+
+
+/* ESTILO FORM EMAIL */
+.fim-site form {
+  width: 90%;
+  min-width: 28.125em;
+  max-width: 35em;
+  background-color: #840c15;
+  padding: 1em;
+  border-radius: 2vh;
+}
+
+.fim-site fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fim-site label,
+.fim-site input,
+.fim-site textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fim-site input,
+.fim-site textarea {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  border-bottom-color: #bbb;
+  padding: 0.75em;
+  margin: 0.5em 0 2.5em;
+  color: white;
+  outline: 0;
+}
+
+.fim-site input:invalid:focus,
+.fim-site textarea:invalid:focus {
+  border-bottom: 2px solid #ff000d;
+}
+
+.fim-site input:valid:focus,
+.fim-site textarea:valid:focus {
+  border-bottom: 2px solid #ff000d;
+}
+
+.fim-site input::placeholder,
+textarea::placeholder {
+  color: rgb(182, 182, 182);
+}
+
+.fim-site input:focus,
+.fim-site textarea:focus {
+  border-bottom: 2px solid #8e999a;
+  background-color: #182143;
+}
+
+.fim-site legend {
+  padding: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.3em;
+}
+
+.fim-site .btn {
+  background-color: #ff000d;
+  color: white;
+  border-radius: 30vh;
+  cursor: pointer;
+  padding: 0.7em 2em;
+  font-size: 1.2em;
+  border: none;
+}

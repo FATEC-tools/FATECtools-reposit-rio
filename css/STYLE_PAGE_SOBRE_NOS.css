@@ -1,0 +1,139 @@
+/* ESTILOS GLOBAIS */
+article{    
+    padding: 2%;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 17px;
+    margin-top: 0;
+}
+
+/* ESTILO OBJETIVO DO FATEC TOOLS */
+.section-red{
+    width: 100vw;
+    padding: 3% 8%;
+    background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 40%);
+    color: white;
+    border-top: solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-objetivo{
+    margin: 0 5%;
+}
+
+.left-objetivo img{
+    height: 400px;
+}
+
+.right-objetivo{
+    padding: 4%;
+    margin: 0 9%;
+}
+
+.right-objetivo span{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.right-objetivo h2{margin-bottom: 0;}
+
+/* ESTILO CARD DOS COLABORADOES */
+.colaboradores{
+    margin: 2% 3%;
+    margin-bottom: 6%;
+    padding: 0 2%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colaboradores h2{
+    align-self: start;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+
+
+.card-colabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-colabs div{
+    height: 200px;
+    width: 600px;
+    margin: .5%;
+    border-radius: 2vh;
+    transition: .5s;
+}
+
+.card-colabs .colabs:hover{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    transform: scale(1.02);
+}
+
+.colabs{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colabs h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.colabs h4{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.colabs h4 a{
+    color: white;
+    font-weight: 500;
+}
+
+.colabs h4 a:hover{
+    color:yellow;
+
+}
+
+.colabs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colabs img{
+    border-radius: 50vh;
+    height: 150px;
+    width: 150px;
+}
+
+.left-colab{
+    align-items: center;
+}
+
+.colab-red{
+    background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 40%);
+}
+
+.colab-blue{
+    background-image: linear-gradient(-90deg, #1c2957 10%, #2c4ab6 40%);
+}

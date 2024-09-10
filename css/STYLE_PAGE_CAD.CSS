@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ESTILO GERAL - FUNDO E CENTRALIZAÇÃO */
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(195deg, #2b3a72 0%, #040518 70%);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input, label select {
+    font-size: 1.5vh;
+}
+
+h1 {
+    font-size: 3vh;
+}
+
+/* ESTILO CARD*/
+.flex-center {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_login {
+    color: white;
+    background-image: linear-gradient(180deg, #2c3e81, #131b38);
+    border-radius: 3vh;
+    box-shadow: 0px 15px 10px #010107;
+    width: 50vw;
+    padding: 6% 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO DOS FORMULARIO */
+.fielholder {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-lado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%
+}
+
+/* ESTILOS NOS INPUTS E LABALs */
+
+.fielholder form input, select,
+.fielholder form .flex-lado div input {
+    width: 98%;
+    border: none;
+    border-radius: 1vh;
+    transform: scale(1.0);
+    transition: 0.2s;
+    height: 6vh;
+}
+
+.fielholder form input:focus, select:focus,
+.fielholder form .flex-lado div input:focus {
+    border: none;
+    box-shadow: 0px 5px 8px #040518ab;
+    border-radius: 1vh;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+input{
+    margin-bottom: 1%;
+    padding-left: 2%;
+}
+
+#btn-entrar {
+    margin: 2% 0;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    height: 7vh;
+    border-radius: 1vh;
+    color: white;
+    background: #ED2625;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+#btn-entrar:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 10PX 20px -10px #ff2f2f;
+}
+
+#btn-ancora {
+    width: 100%;
+}
+
+.card_login p{
+    font-size: 13px;
+    margin-bottom: 1px;
+    text-align: center;
+    margin-top: 4px;
+    line-height: 16px;
+}
+
+.card_login a {
+    color: #7790ec;
+    transition: .2s;
+}
+
+.card_login a:hover {
+    color: #ED2625;
+}
+
+#fazer-login{
+    margin-top: 2%;
+}
+

@@ -1,0 +1,100 @@
+/* ESTILOS GERAIS */
+#tela-inicio article {
+    margin: 2% 9%;
+}
+
+#tela-inicio h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#tela-inicio h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*MARGENS*/
+
+#imagem-app-site {
+    margin-bottom: 100px;
+}
+
+/* ESTILOS DOS BTN APP */
+.inicio-aplicativos-relevantes,
+.aplicativos-categoria {
+    color: white;
+}
+
+.flex-lado-quebra {
+    display: flex;
+    justify-content: center;
+}
+
+.app-relevante,
+.app-categoria {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-app {
+    padding: 1% 0.3%;
+    width: 15%;
+    margin: .5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.btn-app:hover {
+    transform: scale(1.02);
+    background: #BA2221;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.438);
+    border-radius: 2vh;
+}
+
+.btn-app img {
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.btn-app span {
+    font-style: italic;
+}
+
+.btn-app h3 {
+    font-size: 20px;
+    text-align: center;
+    text-wrap: wrap;
+    word-break: break-word;
+}
+
+/*BTN CATERGORIA*/
+#btn-aplicativos-categoria {
+    background: #BA2221;
+    width: 260px;
+    border-radius: 30vh;
+    padding: .1% 2%;
+    transition: .6s;
+    cursor: pointer;
+}
+
+#btn-aplicativos-categoria:hover {
+    transform: scale(1.02);
+}
+
+/* ESTILOS IMAGENS PROPAGANDA */
+.imagem-propaganda {
+    width: 100%;
+    margin: 0% 0;
+    padding: 0;
+}
+
+.imagem-propaganda img {
+    width: 100%;
+    height: 100%;
+}
