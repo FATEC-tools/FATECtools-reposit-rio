@@ -8,6 +8,10 @@ Bem-vindo ao **FATEC Tools**, o repositório central para todas as suas necessid
 - **Biblioteca de Artigos**: Acesse artigos acadêmicos e publicações relacionadas às disciplinas oferecidas na FATEC, proporcionando uma base sólida para pesquisa e estudo.
 - **Guias e Tutoriais**: Navegue por guias passo a passo e tutoriais que oferecem instruções claras e práticas para projetos e experimentos.
 
+## Link Fatec tools
+
+link: https://fatec-tools.github.io/
+
 ## Contribua
 
 Encorajamos contribuições! Se você tem uma ferramenta, um site ou um artigo que acredita ser valioso para a comunidade FATEC, não hesite em submeter um pull request ou abrir uma issue.
