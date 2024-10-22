@@ -1,0 +1,29 @@
+@import url(theme.css);
+
+a {
+    font: normal;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.ancora-fatectools {
+    text-decoration: none;
+}
+
+.ancora-sublinhado {
+    text-decoration: underline;
+}
+
+h1,
+.ancora-fatectools h4,
+.right-objetivo h1 {
+    margin-bottom: 0;
+
+    span {
+        font-weight: 400;
+        font-style: italic;
+
+    }
+
+}
