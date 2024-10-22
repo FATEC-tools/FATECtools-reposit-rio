@@ -1,0 +1,52 @@
+/* ESTILOS GERAIS TELA LOGIN, CADASTRO E SENHA */
+
+@import url('theme.css');
+
+/* Estilos de inputs */
+
+input,
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    height: 55px;
+
+    color: var(--preto-base);
+
+    border: none;
+    border-radius: 10px;
+    padding: 3% 2%;
+
+
+    transition: 0.3s;
+}
+
+form input[type="submit"] {
+    height: 65px;
+    cursor: pointer;
+}
+
+form input[type='text']:focus,
+form input[type='password']:focus,
+form input[type='email']:focus {
+    box-shadow: 0px 5px 10px var(--azul-escuro);
+    border-radius: 2px;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+
+
+/* Estilo de ancoras */
+a {
+    color: var(--link-color);
+    transition: .2s;
+
+}
+
+a:hover {
+    color: var(--vermelho-base);
+}

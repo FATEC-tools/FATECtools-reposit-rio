@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/STYLE_PAGE_LOGIN.CSS">
     <link rel="stylesheet" href="css/STYLE_SVG_LOGIN.css">
+    <link rel="stylesheet" href="css/style_pagina_Login.CSS">
+
     <title>FATEC tools - Login</title>
     <link rel="icon" href="img/ICON_SITE_FATECTOOLS.png" type="image/png">
 </head>
 
 <body>
     <main>
+
         <div class="left_login">
+
             <h1>Bem-vindo de volta!</h1>
-            <h2>Bora fatecano, estudar?</h2>
+
+            <h2>Vamos estudar?</h2>
+
             <!-- SVG FIGURA ANIMADA, MINIMIZE OU VÁ PARA A LINHA 682 -->
             <svg class="animated" id="freepik_stories-innovation" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -684,27 +689,38 @@
         </div>
 
         <div class="right_login">
+
             <div class="card_login">
+
                 <h1>Login</h1>
+
                 <div class="fielholder">
-                    <form action="" method="get">
+
+                    <form action="index.html" method="get">
+
                         <label for="senha">Usuario</label>
                         <input type="text" name="usuario" placeholder="Usuario" required>
 
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha" required>
 
+                        <input class="btn-vermelho" type="submit" value="Entrar">
+
                     </form>
 
-                    <a href="PAGE_INICIAL.html" id="btn-ancora"><button id="btn-entrar">Entrar</button></a>
-                    
-                    <p>Esqueceu a senha? <a href="PAGE_REDEFINIR_SENHA.html">Clique aqui</a></p>
-                    
-                    <p>Ainda não tem uma conta? faça o seu cadastro <a href="PAGE_ENTRAR_CAD.html">Aqui!</a></p>
+                    <p class="text-ancora">Esqueceu a senha? <a href="pagina_redefinir.html">Clique aqui</a></p>
+
+                    <p class="text-ancora">Ainda não tem uma conta? faça o seu cadastro <a
+                            href="pagina_cadastro.html">Aqui!</a></p>
+
                 </div>
+
             </div>
+
         </div>
+
     </main>
+
 </body>
 
 </html>

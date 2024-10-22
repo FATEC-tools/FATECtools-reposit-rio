@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('theme/theme_login_cad.css');
+
+
+/* ESTILO GERAL - FUNDO E CENTRALIZAÇÃO */
+body {
+    background-image: var(--gradiente-base);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ESTILO CARD*/
+.flex-center {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_login {
+    background-image: var(--gradiente-alter);
+    padding: 10%;
+    height: 100vh;
+    box-shadow: 0px 15px 20px var(--azul-escuro);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO DOS FORMULARIO */
+.fielholder {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-lado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%
+}
