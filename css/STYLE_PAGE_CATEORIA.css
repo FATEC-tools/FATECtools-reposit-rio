@@ -1,3 +1,6 @@
+@import url(theme/theme_header_footer.css);
+@import url(theme/theme.css);
+
 .container{
   width: 100%;
   overflow: hidden
@@ -125,4 +128,76 @@
   transition: all 0.4s;
   color: white;
   padding: 2%;
+}
+
+/* adicionado responsividade para as paginas de disciplina - celular */
+@media only screen and (max-width: 768px) {
+
+.techs {
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+}
+
+.tools .card, .techs .card {
+  width: 100%;
+  max-width: 300px; 
+  margin: 10px 0;
+}
+
+.card2 {
+  height: auto;
+}
+
+
+h2 {
+  align-items: center;
+  text-align: center;
+}
+
+.card2 p {
+  font-size: 14px; /* Ajustar para tamanhos menores */
+  text-align: center;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.skills2, .skills {
+  padding: 10px;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card, .card2 {
+  width: 90%; /* Tamanho maior para telas pequenas */
+  max-width: 300px;
+}
+
+.tools .card, .techs .card {
+  margin: 20px 0;
+  width: 70%;
+}
+
+.techs,
+.tools {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 }

@@ -1,0 +1,134 @@
+@import url('theme/theme_login_cad.css');
+
+/* ESTILO GERAL - FUNDO E CENTRALIZAÇÃO */
+
+body {
+    background-image: var(--gradiente-base);
+    background-attachment: fixed;
+    height: 100vh;
+
+    main {
+        height: 100vh;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+svg {
+    height: 60vh;
+    transform: translateX(-20%);
+}
+
+/* ESTILO DA ESQUERDA TITULOS E IMAGEM */
+.left_login {
+    width: 50vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    h1 {
+        color: var(--vermelho-base);
+    }
+
+    h1,
+    h2 {
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+
+
+/* ESTILO DA DIREITA CARD LOGIN */
+.right_login {
+    width: 50vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card_login {
+        background-image: var(--gradiente-alter);
+        padding: 10%;
+        height: 100vh;
+        box-shadow: 0px 15px 20px var(--azul-escuro);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* RESPONSIVIDADE PARA TABLETS (largura entre 768px e 1024px) */
+@media only screen and (max-width: 1024px) {
+    .left_login, .right_login {
+        width: 40vh;
+    }
+
+    svg {
+        height: 40vh;
+        transform: translateX(0);
+    }
+
+    .right_login .card_login {
+        border-radius: 20px; 
+        height: auto;
+        padding: 5%;
+    }
+
+    body main {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES (largura abaixo de 768px) */
+@media only screen and (max-width: 768px) {
+    .left_login, .right_login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left_login {
+        text-align: center;
+        align-items: center;
+    }
+
+    svg {
+        height: 30vh;
+        transform: translateX(0);
+    }
+
+    .right_login {
+        align-items: center;
+    }
+
+    .right_login .card_login {
+        width: 80%;
+        padding: 10%;
+        border-radius: 20px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    body main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
