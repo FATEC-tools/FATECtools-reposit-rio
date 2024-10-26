@@ -26,28 +26,39 @@
 
             <div class="topo-direita">
 
-                <a class="ancora-fatectools" href="PAGE_INICIAL.html">
+                <a class="ancora-fatectools" href="index.html">
                     <h4>Fatec <span>tools</span></h4>
                 </a>
 
                 <h4 class="traco-header">|</h4>
 
-                <div class="opcoes">
-                    <ul>
-                        <li><a class="text-ancora" href="index.html">Início</a></li>
-                        <li><a class="text-ancora" href="pagina_sobre_nos.html">Sobre nós</a></li>
-                        <li><a class="text-ancora" href="#Cursos-disciplinas">Cursos</a></li>
-                        <li><a class="text-ancora" href="#Cursos-disciplinas">Disciplinas</a></li>
-                        <li><a class="text-ancora" href="#entrar-contato">Contato</a></li>
-                        <li><a class="text-ancora" href="PAGE_PESQUISA.html">Pesquisar</a></li>
-                    </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
 
+                <ul class="nav-links ativo" id="nav-links">
+                    <div class="opcoes">
+                        <ul>
+                            <li><a class="text-ancora" href="index.html">Início</a></li>
+                            <li><a class="text-ancora" href="pagina_sobre_nos.html">Sobre nós</a></li>
+                            <li><a class="text-ancora" href="#Cursos-disciplinas">Cursos</a></li>
+                            <li><a class="text-ancora" href="#Cursos-disciplinas">Disciplinas</a></li>
+                            <li><a class="text-ancora" href="#entrar-contato">Contato</a></li>
+                            <li><a class="text-ancora" href="PAGE_PESQUISA.html">Pesquisar</a></li>
+
+                            <li class="perfil-div">
+                                <a href="pagina_login.html"><button class="btn-vermelho">Entrar</button></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </ul>
+                
             </div>
 
-            <div class="perfil-div">
-                <a href="pagina_login.html"><button class="btn-vermelho">Entrar</button></a>
-            </div>
         </nav>
     </header> <!-- FIM TOPO SITE -->
 
@@ -79,7 +90,7 @@
                     <div class="left-colab">
                         <img src="img/FOTO-COLABS/LOGO_FATECTOOLS.png" alt="">
                     </div>
-                    
+
                     <div class="right-colab">
 
                         <h1>Amauri Barbieri</h1>
@@ -228,8 +239,56 @@
                 </form>
             </article>
         </div>
-
     </footer>
 </body>
+
+<script src="js/menu-sanduiche.js"></script>
+
+<script type="text/javascript">
+    function Define_Colabs_Colors() {
+
+        if (window.innerWidth < 1550) {
+            let indice = 0;
+
+            const cores_mobile = [
+                "linear-gradient(-90deg, #840C15 10%, #BA2221 40%)",
+                "linear-gradient(-90deg, #1c2957 10%, #2c4ab6 40%)"
+            ];
+
+            document.querySelectorAll(".colabs").forEach(item => {
+
+                item.style.background = cores_mobile[indice];
+                indice = (indice > 0) ? 0 : 1;
+
+            });
+
+        } else {
+
+            let contador = 0;
+
+            const cores_desktop = [
+                "linear-gradient(-90deg, #840C15 10%, #BA2221 40%)",
+                "linear-gradient(-90deg, #1c2957 10%, #2c4ab6 40%)",
+                "linear-gradient(-90deg, #1c2957 10%, #2c4ab6 40%)",
+                "linear-gradient(-90deg, #840C15 10%, #BA2221 40%)",
+                "linear-gradient(-90deg, #840C15 10%, #BA2221 40%)",
+                "linear-gradient(-90deg, #1c2957 10%, #2c4ab6 40%)",
+                "linear-gradient(-90deg, #840C15 10%, #BA2221 40%)"
+            ];
+
+            document.querySelectorAll(".colabs").forEach(item => {
+
+                item.style.background = cores_desktop[contador];
+                contador++;
+
+            });
+        }
+    }
+
+    window.addEventListener("load", Define_Colabs_Colors);
+    window.addEventListener("resize", Define_Colabs_Colors);    
+</script>
+
+
 
 </html>

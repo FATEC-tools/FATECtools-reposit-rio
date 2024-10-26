@@ -25,29 +25,47 @@
 <body>
     <!-- INICIO TOPO SITE -->
     <header class="topo-site">
+
         <nav class="topo-nav">
+
             <div class="topo-direita">
-                <a id="ancora-FATECTOOLS" href="PAGE_INICIAL.html">
-                    <h2>Fatec <span>tools</span></h2>
+
+                <a class="ancora-fatectools" href="index.html">
+                    <h4>Fatec <span>tools</span></h4>
                 </a>
-                <h2 id="traço">|</h2>
-                <div id="opcoes">
-                    <ul>
-                        <li><a href="PAGE_INICIAL.html">Início</a></li>
-                        <li><a href="PAGE_SOBRE_NOS.html">Sobre nós</a></li>
-                        <li><a href="#Cursos-disciplinas">Cursos</a></li>
-                        <li><a href="#Cursos-disciplinas">Disciplinas</a></li>
-                        <li><a href="#entrar-contato">Contato</a></li>
-                        <li><a href="PAGE_PESQUISA.html">Pesquisar</a></li>
-                    </ul>
+
+                <h4 class="traco-header">|</h4>
+
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
+
+                <ul class="nav-links ativo" id="nav-links">
+                    <div class="opcoes">
+                        <ul>
+                            <li><a class="text-ancora" href="index.html">Início</a></li>
+                            <li><a class="text-ancora" href="pagina_sobre_nos.html">Sobre nós</a></li>
+                            <li><a class="text-ancora" href="#Cursos-disciplinas">Cursos</a></li>
+                            <li><a class="text-ancora" href="#Cursos-disciplinas">Disciplinas</a></li>
+                            <li><a class="text-ancora" href="#entrar-contato">Contato</a></li>
+                            <li><a class="text-ancora" href="PAGE_PESQUISA.html">Pesquisar</a></li>
+
+                            <li class="perfil-div">
+                                <a href="pagina_login.html"><button class="btn-vermelho">Entrar</button></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </ul>
+
             </div>
-            <div id="perfil-div">
-                <a href="PAGE_ENTRAR_LOGIN.html"><button>Entrar</button></a>
-            </div>
+
         </nav>
     </header> <!-- FIM TOPO SITE -->
-
+    
     <!-- PESQUISAR -->
     <main>
         <form class="example" action="x">
@@ -61,27 +79,32 @@
 
                 <div class="btn-app">
                     <a href="PAGE_APP_VSCODE.html"><img src="img/ICONES_APP/visualcode.png" alt="imagem do site ou app">
-                    <h3>Visual Studios <br>Code</h3></a>
+                        <h3>Visual Studios <br>Code</h3>
+                    </a>
                 </div>
 
                 <div class="btn-app">
                     <a href="PAGE_APP_VISUALG.html"><img src="img/ICONES_APP/visualg.webp" alt="imagem do site ou app">
-                    <h3>VisuALG</h3></a>
+                        <h3>VisuALG</h3>
+                    </a>
                 </div>
 
                 <div class="btn-app">
                     <a href="PAGE_APP_BRMODELO.html"><img src="img/ICONES_APP/brmodelo.jpg" alt="imagem do site ou app">
-                    <h3>brModelo</h3></a>
+                        <h3>brModelo</h3>
+                    </a>
                 </div>
 
                 <div class="btn-app">
                     <a href="PAGE_APP_FIGMA.html"><img src="img/ICONES_APP/figma.webp" alt="imagem do site ou app">
-                    <h3>Figma</h3></a>
+                        <h3>Figma</h3>
+                    </a>
                 </div>
 
                 <div class="btn-app">
                     <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
-                    <h3>Oracle</h3></a>
+                        <h3>Oracle</h3>
+                    </a>
                 </div>
 
                 <div class="btn-app">
@@ -91,7 +114,8 @@
 
                 <div class="btn-app">
                     <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
-                    <h3>Oracle</h3></a>
+                        <h3>Oracle</h3>
+                    </a>
                 </div>
 
                 <div class="btn-app">
@@ -120,77 +144,94 @@
 
     </main>
 
-    <!-- footer/fim-site -->
-
+    <!-- RODAPE -->
     <footer class="fim-site">
+
         <div class="flex-rodape">
+
             <article class="sobre-rodape">
-                <a id="ancora-FATECTOOLS" href="PAGE_INICIAL.html">
-                    <h2>Fatec <span>tools</span></h2>
+
+                <a class="ancora-fatectools" href="index.html">
+                    <h1>Fatec <span>tools</span></h1>
                 </a>
+
                 <p>
                     O site Fatec Tools foi para auxiliar os alunos para encontrar de forma rápida e facil as ferramentas
                     que serão usadas ao longo de seus cursos, também encontrará artigos para estudo.
                 </p>
 
-                <a id="ancora-sobre-nos" href="PAGE_SOBRE_NOS.html">
+                <a class="ancora-sublinhado" href="pagina_sobre_nos.html">
                     <h3>Sobre Nós</h3>
                 </a>
+
             </article>
 
             <div id="traco-branco"> </div>
 
             <article class="disciplinas-rodape">
-                <h3 id="Cursos-disciplinas">Cursos e disciplinas</h3>
-                <ul>
-                    <li>
-                        <h5><a href="index.html">Desenvolvimento Web</a></h5>
-                    </li>
-                    <li>
-                        <h5><a href="PAGE_designdigital.html">Design Digital</a></h5>
-                    </li>
-                    <li>
-                        <h5><a href="EM_BREVE.html">Engenharia de Software</a></h5>
-                    </li>
-                    <li>
-                        <h5><a href="EM_BREVE.html">Modelagem de Banco da Dados</a></h5>
-                    </li>
-                    <li>
-                        <h5><a href="EM_BREVE.html">Sistemas operacionais</a></h5>
-                    </li>
-                    <li>
-                        <h5><a href="EM_BREVE.html">Algoritmos e Logica de Programção</a></h5>
-                    </li>
-                </ul>
+
+                <h1 id="Cursos-disciplinas">Cursos e disciplinas</h1>
+
+                <div>
+                    <ul>
+                        <li>
+                            <h4><a class="ancora-sublinhado" href="pagina_devWeb.html">Desenvolvimento Web</a></h4>
+                        </li>
+                        <li>
+                            <h4><a class="ancora-sublinhado" href="PAGE_designdigital.html">Design Digital</a></h4>
+                        </li>
+                        <li>
+                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Engenharia de Software</a></h4>
+                        </li>
+                        <li>
+                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Modelagem de Banco da Dados</a></h4>
+                        </li>
+                        <li>
+                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Sistemas operacionais</a></h4>
+                        </li>
+                        <li>
+                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Algoritmos e Logica de Programção</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
             </article>
 
             <div id="traco-branco"> </div>
 
             <article class="contato-rodape">
-                <h3 id="entrar-contato">Contato</h3>
+                <h1 id="entrar-contato">Contato</h1>
                 <p>
                     Achou um erro? ou senão tem uma sugestão, entre em contato conosco!
                 </p>
 
                 <form action="#" method="post" autocomplete="off">
                     <fieldset>
+
                         <legend>Formulário de contato</legend>
+
                         <label for="name">Nome</label>
                         <input type="text" name="name" id="name" required placeholder="Digite seu nome completo" />
+
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" required placeholder="Digite um e-mail válido" />
+
                         <label for="subject">Assunto</label>
                         <input type="text" name="subject" id="subject" />
+
                         <label for="message">Mensagem</label>
                         <textarea name="message" id="message" rows="7" required maxlength="1000" minlength="20"
                             placeholder="Conte-nos tudo"></textarea>
-                        <button type="submit" class="btn">Enviar</button>
+
+                        <input type="submit" class="btn-vermelho" value="Enviar">
+
                     </fieldset>
                 </form>
             </article>
         </div>
-        <footer id="roda-rodapé"></footer>
     </footer>
 </body>
+
+<script src="js/menu-sanduiche.js"></script>
 
 </html>
