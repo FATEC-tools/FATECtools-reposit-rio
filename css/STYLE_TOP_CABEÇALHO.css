@@ -33,6 +33,10 @@ body {
 
 
 /* botao entrar */
+.perfil-div {
+    align-self: flex-end;
+}
+
 .perfil-div button {
     width: 120px;
     height: 35px;
@@ -54,6 +58,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 
     li {
         margin-right: 30px;
@@ -170,6 +175,85 @@ legend {
 
 /* REPONSIVIDADE PARA MOBILE */
 @media only screen and (max-width: 768px) {
+
+    /* MENU SANDUICHE */
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 30px;
+        height: 20px;
+
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        z-index: 101;
+
+        cursor: pointer;
+    }
+
+    .line {
+        background-color: var(--branco-base);
+        height: 3px;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* Mudança do ícone para "X" quando o menu está ativo */
+    .menu-toggle.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-toggle.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -5.4px);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        bottom: -100%;
+        /* Começa fora da tela, na parte de baixo */
+        left: 0;
+        /* Para ocupar toda a largura */
+        width: 100%;
+        /* Ocupa toda a largura da tela */
+        height: 100%;
+        /* Altura do menu */
+        background: var(--gradiente-vermelho);
+        transition: bottom 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        bottom: 0;
+        /* Traz o menu para dentro da tela */
+    }
+
+    .traco-header {
+        display: none;
+    }
+
+    .opcoes ul {
+        flex-direction: column;
+        margin-top: 20px;
+
+        li {
+            margin: 20px;
+        }
+    }
 
 
     .fim-site {
