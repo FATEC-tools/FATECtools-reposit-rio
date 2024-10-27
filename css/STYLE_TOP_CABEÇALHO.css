@@ -173,6 +173,12 @@ legend {
     font-size: 1.3em;
 }
 
+
+/* coloquei esse display none pq tava aparecendo sem tar -768px 27/10 */
+.menu-toggle { 
+    display: none;
+}
+
 /* REPONSIVIDADE PARA MOBILE */
 @media only screen and (max-width: 768px) {
 
