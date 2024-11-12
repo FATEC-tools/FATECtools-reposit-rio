@@ -1,3 +1,5 @@
+@import url(theme/theme.css);
+
 /* ESTILOS GERAIS */
 #tela-inicio article {
     margin: 2% 9%;
@@ -37,55 +39,7 @@
     flex-wrap: wrap;
 }
 
-.btn-app {
-    padding: 1% 0.3%;
-    width: 15%;
-    margin: .5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: .6s;
-    cursor: pointer;
-}
 
-.btn-app:hover {
-    transform: scale(1.02);
-    background: #BA2221;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.438);
-    border-radius: 2vh;
-}
-
-.btn-app img {
-    background-color: gray;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-}
-
-.btn-app span {
-    font-style: italic;
-}
-
-.btn-app h3 {
-    font-size: 20px;
-    text-align: center;
-    text-wrap: wrap;
-    /* word-break: break-word; tirei pq tava atoa q atrapalha na responsividade*/
-}
-
-/*BTN CATERGORIA*/
-#btn-aplicativos-categoria {
-    background: #BA2221;
-    width: 260px;
-    border-radius: 30vh;
-    padding: .1% 2%;
-    transition: .6s;
-    cursor: pointer;
-}
-
-#btn-aplicativos-categoria:hover {
-    transform: scale(1.02);
-}
 
 /* ESTILOS IMAGENS PROPAGANDA */
 .imagem-propaganda {
@@ -97,20 +51,4 @@
 .imagem-propaganda img {
     width: 100%;
     height: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-    .app-relevante {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .app-categoria {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
 }
