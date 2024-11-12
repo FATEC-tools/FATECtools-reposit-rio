@@ -1,4 +1,3 @@
-@import url(theme/theme_header_footer.css);
 @import url(theme/theme.css);
 
 .container{
@@ -18,11 +17,6 @@
   align-items: center;
 }
 
-.tech h2 {
-  font-weight: 400;
-  font-size: 30px;
-  color: #fff;
-}
 
 .techs {
   gap: 3rem;
@@ -32,17 +26,6 @@
 .tool,
 .tech {
   margin: 2% 6%;
-}
-
-.tool h2 {
-  font-weight: 400;
-  font-size: 30px;
-  color: #fff;
-}
-
-.tools a,
-.techs a {
-  margin: 1%;
 }
 
 .card {
@@ -90,15 +73,6 @@
   width: 170px;
 }
 
-.card2 p {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #fff;
-  margin: 3% 10%;
-  text-wrap: nowrap;
-}
-
 .card2 span {
   font-style: italic;
   font-size: 13px;
@@ -111,7 +85,7 @@
 
 /* arrumar o tamanho da imagem do card dos Livros, deixar igual ao do de Sites/Artigos */
 .card2 {
-  width: 25%;
+  width: 250px;
   height: 50vh;
   background: #ed2625;
   display: flex;
@@ -122,13 +96,13 @@
   transition: all 0.4s;
   color: white;
   padding: 2%;
+  margin: 2px 5px;
 }
 
 /* adicionado responsividade para as paginas de disciplina - celular */
 @media only screen and (max-width: 768px) {
 
 .techs {
-  flex-direction: column;
   align-items: center;
   gap: 0rem;
 }
@@ -150,9 +124,7 @@ h2 {
 }
 
 .card2 p {
-  font-size: 14px; /* Ajustar para tamanhos menores */
   text-align: center;
-  margin: 10px 0;
 }
 
 h2 {

@@ -1,20 +1,4 @@
 @import url(theme/theme.css);
-
-/* ESTILOS GERAIS */
-#tela-inicio article {
-    margin: 2% 9%;
-}
-
-#tela-inicio h2 {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-#tela-inicio h3 {
-    font-size: 20px;
-    font-weight: 400;
-}
-
 /*MARGENS*/
 
 #imagem-app-site {

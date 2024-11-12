@@ -29,6 +29,23 @@ h6 {
     font-size: 14px;
 }
 
+.estilo-fonte {
+
+    article {
+        margin: 2% 9%;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
 /* Estilizações de BTNs */
 
 .btn-vermelho {
