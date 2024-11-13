@@ -1,0 +1,49 @@
+@import url(theme/theme.css);
+
+
+.flex-lado-quebra {
+    display: flex;
+    justify-content: center;
+}
+
+.app-relevante,
+.app-categoria {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-app {
+    padding: 1% 0.3%;
+    width: 175px;
+    margin: .5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.btn-app:hover {
+    transform: scale(1.02);
+    background: var(--vermelho-base);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.438);
+    border-radius: 2vh;
+}
+
+.btn-app img {
+    background-color: var(--cinza-base);
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.btn-app span {
+    font-style: italic;
+}
+
+.btn-app h3 {
+    font-size: 20px;
+    text-align: center;
+    text-wrap: wrap;
+}
