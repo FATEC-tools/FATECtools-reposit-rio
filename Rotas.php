@@ -44,10 +44,24 @@ class Rotas
 $route = new Rotas();
 
 //pode ser qlqr nome para esse controller
-$route->get("/", [InicioController::class, "inicio"]);
+$route->get("/",                    [InicioController::class, "inicio"]);
 //define um nome para a rota        //chama o controller     //chama um metodo
+
+
 
 $route->get("/desenvolvimento-web", [DesenvolvimentoWebController::class, "inicio"]);
 $route->get("/design-web", [DesignWebController::class, "inicio"]);
 $route->get("/EM_BREVE", [EmBreveController::class, "inicio"]);
+
+$route->get("/pesquisar", [PesquisarController::class, "inicio"]);
+
+$route->get("/login", [LoginController::class, "login"]);
+$route->get("/cadastro", [LoginController::class, "cadastrar"]);
+$route->get("/redefinir-senha", [LoginController::class, "redefinir"]);
+
+$route->get("/sobre-nos", [SobreNosController::class, "inicio"]);
+
+
+$route->get("/pagina-aplicativo", [PaginaAppController::class, "inicio"]);
+
 ?>
