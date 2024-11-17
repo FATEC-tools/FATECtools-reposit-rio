@@ -48,6 +48,7 @@ h2 {
     background: #03112c;
 }
 
+
 .btn-instalar {
     margin-top: 3%;
     color: white;
@@ -206,7 +207,7 @@ h2 {
 
 
 /* ESTILOS AREA TUTORIAL */
-.area-primeiros-passos {
+.area-primeiros-passos, .passos-video {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -214,7 +215,7 @@ h2 {
     align-items: center;
 }
 
-#titulo-primeiros-passos {
+#titulo-primeiros-passos{
     color: white;
     background: #25356F;
     padding: .5% 5%;
@@ -224,7 +225,7 @@ h2 {
     font-weight: 400;
 }
 
-.passos-geral {
+.passos-geral{
     padding: 4% 3%;
     display: flex;
     justify-content: center;
@@ -265,7 +266,6 @@ h2 {
 
 .passos-video h2 {
     font-size: 30px;
-    margin-left: 4%;
     font-weight: 400;
 }
 
@@ -282,4 +282,169 @@ h2 {
 #cor:hover {
     border-radius: 1vh;
     box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.356);
+}
+/* RESPONSIVIDADE PARA TABLETS (largura entre 768px e 1024px)*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .opiniao-avalia P {
+        font-size: 12px;
+    }
+
+    .area-download {
+        padding: 5px 3px;
+    }
+
+    .card-instalar {
+        flex-direction: column;
+    }
+
+    #image-icon-app {
+        height: 150px;
+        width: 150px;
+    }
+
+    .btn-instalar {
+        width: 200px;
+        height: 40px;
+        font-size: 1.5vh;
+    }
+
+    .area-descricao {
+        flex-direction: column;
+    }
+
+    .descricao-avaliacao {
+        padding: 3% 4%;
+        margin: 2% 5%;
+    }
+
+    .descricao p {
+        font-size: 16px;
+    }
+
+    .blocos-avaliacao .avaliacao-user {
+        width: 80vw;
+        height: 250px;
+    }
+
+    .blocos-avaliacao {
+        height: 50vh;
+    }
+
+    .img-avalia img {
+        height: 80px;
+    }
+
+    .img-avalia h2 {
+        font-size: 25px;
+    }
+
+    .area-primeiros-passos {
+        padding: 2% 1%;
+    }
+
+    #titulo-primeiros-passos {
+        font-size: 25px;
+    }
+
+    .passos-left img,
+    .passos-right img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .passos-video h2 {
+        font-size: 25px;
+    }
+
+    #cor {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES (largura até 767px) */
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    .opiniao-avalia P {
+        font-size: 12px;
+    }
+
+    .area-download {
+        padding: 3px 1px;
+    }
+
+    .card-instalar {
+        flex-direction: column;
+    }
+
+    #image-icon-app {
+        height: 100px;
+        width: 100px;
+    }
+
+    .btn-instalar {
+        width: 150px;
+        height: 30px;
+        font-size: 1.2vh;
+    }
+
+    .area-descricao {
+        flex-direction: column;
+    }
+
+    .descricao-avaliacao {
+        padding: 2% 3%;
+        margin: 1% 3%;
+    }
+
+    .descricao p {
+        font-size: 14px;
+    }
+
+    .blocos-avaliacao .avaliacao-user {
+        width: 90vw;
+        height: 200px;
+    }
+
+    .blocos-avaliacao {
+        height: 40vh;
+    }
+
+    .img-avalia img {
+        height: 60px;
+    }
+
+    .img-avalia h2 {
+        font-size: 20px;
+    }
+
+    .area-primeiros-passos {
+        padding: 1% 0.5%;
+    }
+
+    #titulo-primeiros-passos {
+        font-size: 20px;
+    }
+
+    .passos-left img,
+    .passos-right img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .passos-video h2 {
+        font-size: 20px;
+    }
+
+    #cor {
+        height: 100%;
+        width: 100%;
+    }
 }

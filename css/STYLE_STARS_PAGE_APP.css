@@ -32,3 +32,10 @@
     fill: #ffa723; /* Set color for selected stars */
   }
   
+  .rating {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
