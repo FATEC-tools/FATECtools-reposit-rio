@@ -3,7 +3,7 @@
     class InicioController{
 
         public function inicio(){
-            require_once "views/index.html";
+            require_once "views/index.php";
         }
 
     }// fim classe

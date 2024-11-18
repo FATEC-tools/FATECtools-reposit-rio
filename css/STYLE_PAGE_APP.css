@@ -1,19 +1,16 @@
-h2 {
-    font-size: 40px;
-}
 
 /* ESTILO AREA DE DOWNLOAD */
 
 .area-download {
     border-top: solid 2px white;
-    width: 100vw;
     margin-bottom: 3%;
     padding: 10px 7px;
-    background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 40%);
+    background-image: var(--gradiente-vermelho);
 }
 
 .card-instalar {
     margin: 4% 0 3%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,42 +31,14 @@ h2 {
 }
 
 
-.text-instalar h2 {
-    text-align: center;
-    margin-bottom: .7%;
-    margin-top: 2%;
-    color: white;
-}
-
 #image-icon-app {
     height: 250px;
     width: 250px;
-    border-radius: 2vh;
+    border-radius: 30px;
     background: #03112c;
 }
 
-.btn-instalar {
-    margin-top: 3%;
-    color: white;
-    font-weight: lighter;
-    font-size: 1.9vh;
-    background: #BA2221;
-    border: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 50vh;
-    border: solid .1vh white;
-    cursor: pointer;
-    transition: .2s;
-}
 
-.btn-instalar:hover {
-    transition: .4s;
-    transform: scale(1.05);
-    background: white;
-    box-shadow: 5px 20px 20px #2205057c;
-    color: red;
-}
 
 .area-imagens {
     background-color: gray;
