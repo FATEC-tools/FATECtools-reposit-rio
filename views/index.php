@@ -81,7 +81,7 @@
             <div class="app-relevante flex-lado-quebra">
 
                 <div class="btn-app">
-                    <a href="PAGE_APP_VSCODE.html"><img src="img/ICONES_APP/visualcode.png" alt="imagem do site ou app">
+                    <a href="/fatec-tools/pagina-aplicativo"><img src="img/ICONES_APP/visualcode.png" alt="imagem do site ou app">
                         <h3>Visual Studios <br>Code</h3>
                     </a>
                 </div>

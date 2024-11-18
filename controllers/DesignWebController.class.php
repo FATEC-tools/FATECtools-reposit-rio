@@ -7,7 +7,7 @@ class DesignWebController
     public function inicio()
     {
 
-        require_once "views/pagina_designdigital.html";
+        require_once "views/pagina_designdigital.php";
         
     }
 }

@@ -6,6 +6,6 @@ class DesenvolvimentoWebController
     public function inicio()
     {
 
-        require_once "views/pagina_devWeb.html";
+        require_once "views/pagina_devWeb.php";
     }
 }

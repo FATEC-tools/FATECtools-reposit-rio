@@ -6,7 +6,7 @@ class SobreNosController
     public function inicio()
     {
 
-        require_once "views/pagina_sobre_nos.html";
+        require_once "views/pagina_sobre_nos.php";
 
     }
 }

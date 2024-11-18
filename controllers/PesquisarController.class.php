@@ -6,6 +6,6 @@ class PesquisarController
     public function inicio()
     {
 
-        require_once "views/PAGE_PESQUISA.html";
+        require_once "views/PAGE_PESQUISA.php";
     }
 }

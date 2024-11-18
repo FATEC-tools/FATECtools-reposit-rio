@@ -7,8 +7,8 @@
 
 .slides-imagem-conteiner {
     border: solid #840C15 3px;
-    height: 471px;
-    width: 792px;
+    height: 100%;
+    width: 100%;
     border-radius: 1vw;
     overflow: hidden;
 }

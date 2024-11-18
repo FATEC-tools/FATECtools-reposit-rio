@@ -173,8 +173,25 @@ legend {
     font-size: 1.3em;
 }
 
+
+/* coloquei esse display none pq tava aparecendo sem tar -768px 27/10 */
+.menu-toggle {
+    display: none;
+}
+
 /* REPONSIVIDADE PARA MOBILE */
 @media only screen and (max-width: 768px) {
+    .topo-nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .topo-direita {
+        width: 100%;
+        justify-content: space-between;
+    }
 
     /* MENU SANDUICHE */
 
@@ -186,11 +203,11 @@ legend {
         width: 30px;
         height: 20px;
 
-        position: fixed;
+        /* position: fixed;
         top: 5px;
-        right: 10px;
+        right: 10px; */
         z-index: 101;
-
+        margin-left: 250px;
         cursor: pointer;
     }
 
@@ -202,16 +219,22 @@ legend {
     }
 
     /* Mudança do ícone para "X" quando o menu está ativo */
-    .menu-toggle.active .line:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 7px);
-    }
+    .menu-toggle.active {
+        position: fixed;
+        top: 15px;
+        right: 11px;
 
-    .menu-toggle.active .line:nth-child(2) {
-        opacity: 0;
-    }
+        .line:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
 
-    .menu-toggle.active .line:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -5.4px);
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .line:nth-child(3) {
+            transform: rotate(-45deg) translate(4px, -5.4px);
+        }
     }
 
     .nav-links {
