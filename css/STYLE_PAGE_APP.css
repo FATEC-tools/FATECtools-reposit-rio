@@ -51,8 +51,6 @@ h2 {
     background: #03112c;
 }
 
-
-
 .area-imagens {
     background-color: gray;
     height: 471px;
@@ -184,8 +182,8 @@ h2 {
 
 
 /* ESTILOS AREA TUTORIAL */
-.area-primeiros-passos,
-.passos-video {
+
+.area-primeiros-passos, .passos-video {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -193,7 +191,7 @@ h2 {
     align-items: center;
 }
 
-#titulo-primeiros-passos {
+#titulo-primeiros-passos{
     color: white;
     background: #25356F;
     padding: .5% 5%;
@@ -203,7 +201,7 @@ h2 {
     font-weight: 400;
 }
 
-.passos-geral {
+.passos-geral{
     padding: 4% 3%;
     display: flex;
     justify-content: center;
@@ -361,6 +359,7 @@ h2 {
             transition: .2s;
         }
     }
+
 }
 
 /* RESPONSIVIDADE PARA CELULARES (largura até 767px) */
@@ -476,5 +475,10 @@ h2 {
         width: 100vw;
         flex-direction: column-reverse;
     }
+
+    /* #cor {
+        height: 100%;
+        width: 100%;
+    } */
 
 }

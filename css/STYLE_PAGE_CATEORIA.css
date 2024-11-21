@@ -14,7 +14,6 @@ img.imagemm {
   margin: 2% 6%;
 }
 
-
 .skills2 {
   background: var(--vermelho-escuro);
   padding: 2% 1%;
@@ -41,6 +40,7 @@ img.imagemm {
 .card2 {
   padding: 2%;
   margin: 2px 5px;
+
   width: 250px;
   height: 50vh;
   background: var(--vermelho-base);
@@ -58,7 +58,6 @@ img.imagemm {
 
 /* adicionado responsividade para as paginas de disciplina - celular */
 @media only screen and (max-width: 768px) {
-
 
   .card2 {
     height: auto;

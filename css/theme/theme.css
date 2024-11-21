@@ -187,15 +187,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 @media only screen and (max-width: 768px) {
-
     .btn-categoria-disciplina {
         padding: .1% 3%;
     }
 
     .btn-app {
-        padding: 4% 0;
-        width: 145px;
-        margin: 2% 0.5%;
+        padding: 1% 0.3%;
+        width: 150px;
+        margin: .5%;
 
 
         img {
