@@ -61,8 +61,9 @@ h2 {
 }
 
 .margem-entre-ele {
-    margin: 0% 5%;
+    margin: 4% 5%;
 }
+
 
 /* fim da area de download */
 
@@ -76,11 +77,6 @@ h2 {
 
 
 /* ESTILOS DA AREA DE DESCRIÇAO E AVALIAÇAO */
-.area-descricao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .descricao-avaliacao {
     background: #BA2221;
@@ -229,7 +225,8 @@ h2 {
 .passos {
     background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 80%);
     width: 100vw;
-    border: solid 2px white;
+    border-top: solid 2px var(--branco-base);
+    border-bottom: solid 2px var(--branco-base);
 }
 
 .passos-invert {
@@ -285,8 +282,8 @@ h2 {
     }
 
     #image-icon-app {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
     }
 
     .btn-instalar {
@@ -347,6 +344,23 @@ h2 {
         height: 100%;
         width: 100%;
     }
+
+    .slides-navegation {
+        position: absolute;
+        left: 51%;
+        transform: translate(-49%);
+        display: flex;
+
+        .bar {
+            width: 4.5vw;
+            height: 3vw;
+            border: .1vw solid white;
+            margin: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .2s;
+        }
+    }
 }
 
 /* RESPONSIVIDADE PARA CELULARES (largura até 767px) */
@@ -368,8 +382,8 @@ h2 {
     }
 
     #image-icon-app {
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
     }
 
     .btn-instalar {
@@ -427,7 +441,40 @@ h2 {
     }
 
     .area-imagens {
-        height: 235.5px;
+        height: 254.4px;
         width: 396px;
     }
+
+    .slides-navegation {
+        position: absolute;
+        left: 51%;
+        transform: translate(-49%);
+        display: flex;
+
+        .bar {
+            width: 4.5vw;
+            height: 3vw;
+            border: .1vw solid white;
+            margin: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .2s;
+        }
+    }
+
+    .passos-geral {
+        padding: 4% 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+
+    .passos-invert {
+        background-image: linear-gradient(90deg, #840C15 5%, #BA2221 50%);
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+
 }
