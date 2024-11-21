@@ -1,3 +1,6 @@
+@import url(STYLE_SLIDES_IMAGEM_PAGE_APP.css);
+@import url(STYLE_STARS_PAGE_APP.css);
+
 h2 {
     font-size: 40px;
 }
@@ -48,30 +51,6 @@ h2 {
     background: #03112c;
 }
 
-
-.btn-instalar {
-    margin-top: 3%;
-    color: white;
-    font-weight: lighter;
-    font-size: 1.9vh;
-    background: #BA2221;
-    border: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 50vh;
-    border: solid .1vh white;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.btn-instalar:hover {
-    transition: .4s;
-    transform: scale(1.05);
-    background: white;
-    box-shadow: 5px 20px 20px #2205057c;
-    color: red;
-}
-
 .area-imagens {
     background-color: gray;
     height: 471px;
@@ -80,8 +59,9 @@ h2 {
 }
 
 .margem-entre-ele {
-    margin: 0% 5%;
+    margin: 4% 5%;
 }
+
 
 /* fim da area de download */
 
@@ -95,11 +75,6 @@ h2 {
 
 
 /* ESTILOS DA AREA DE DESCRIÇAO E AVALIAÇAO */
-.area-descricao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .descricao-avaliacao {
     background: #BA2221;
@@ -207,6 +182,7 @@ h2 {
 
 
 /* ESTILOS AREA TUTORIAL */
+
 .area-primeiros-passos, .passos-video {
     width: 100vw;
     display: flex;
@@ -247,7 +223,8 @@ h2 {
 .passos {
     background-image: linear-gradient(-90deg, #840C15 10%, #BA2221 80%);
     width: 100vw;
-    border: solid 2px white;
+    border-top: solid 2px var(--branco-base);
+    border-bottom: solid 2px var(--branco-base);
 }
 
 .passos-invert {
@@ -283,6 +260,7 @@ h2 {
     border-radius: 1vh;
     box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.356);
 }
+
 /* RESPONSIVIDADE PARA TABLETS (largura entre 768px e 1024px)*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     h2 {
@@ -302,8 +280,8 @@ h2 {
     }
 
     #image-icon-app {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
     }
 
     .btn-instalar {
@@ -364,6 +342,24 @@ h2 {
         height: 100%;
         width: 100%;
     }
+
+    .slides-navegation {
+        position: absolute;
+        left: 51%;
+        transform: translate(-49%);
+        display: flex;
+
+        .bar {
+            width: 4.5vw;
+            height: 3vw;
+            border: .1vw solid white;
+            margin: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .2s;
+        }
+    }
+
 }
 
 /* RESPONSIVIDADE PARA CELULARES (largura até 767px) */
@@ -385,8 +381,8 @@ h2 {
     }
 
     #image-icon-app {
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
     }
 
     .btn-instalar {
@@ -443,8 +439,46 @@ h2 {
         font-size: 20px;
     }
 
-    #cor {
+    .area-imagens {
+        height: 254.4px;
+        width: 396px;
+    }
+
+    .slides-navegation {
+        position: absolute;
+        left: 51%;
+        transform: translate(-49%);
+        display: flex;
+
+        .bar {
+            width: 4.5vw;
+            height: 3vw;
+            border: .1vw solid white;
+            margin: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .2s;
+        }
+    }
+
+    .passos-geral {
+        padding: 4% 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+
+    .passos-invert {
+        background-image: linear-gradient(90deg, #840C15 5%, #BA2221 50%);
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+
+    /* #cor {
         height: 100%;
         width: 100%;
-    }
+    } */
+
 }

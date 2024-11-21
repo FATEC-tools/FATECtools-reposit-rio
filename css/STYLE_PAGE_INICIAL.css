@@ -8,7 +8,7 @@
 /* ESTILOS DOS BTN APP */
 .inicio-aplicativos-relevantes,
 .aplicativos-categoria {
-    color: white;
+    color: var(--branco-base);
 }
 
 .flex-lado-quebra {
@@ -36,3 +36,4 @@
     width: 100%;
     height: 100%;
 }
+

@@ -20,47 +20,8 @@
 
 <body>
     <!-- INICIO TOPO SITE -->
-    <header class="topo-site">
-
-        <nav class="topo-nav">
-
-            <div class="topo-direita">
-
-                <a class="ancora-fatectools" href="index.html">
-                    <h4>Fatec <span>tools</span></h4>
-                </a>
-
-                <h4 class="traco-header">|</h4>
-
-                <div class="menu-toggle" id="menu-toggle">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-
-                <ul class="nav-links ativo" id="nav-links">
-                    <div class="opcoes">
-                        <ul>
-                            <li><a class="text-ancora" href="index.html">Início</a></li>
-                            <li><a class="text-ancora" href="pagina_sobre_nos.html">Sobre nós</a></li>
-                            <li><a class="text-ancora" href="#Cursos-disciplinas">Cursos</a></li>
-                            <li><a class="text-ancora" href="#Cursos-disciplinas">Disciplinas</a></li>
-                            <li><a class="text-ancora" href="#entrar-contato">Contato</a></li>
-                            <li><a class="text-ancora" href="PAGE_PESQUISA.html">Pesquisar</a></li>
-
-                            <li class="perfil-div">
-                                <a href="pagina_login.html"><button class="btn-vermelho">Entrar</button></a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </ul>
-                
-            </div>
-
-        </nav>
-    </header> <!-- FIM TOPO SITE -->
+    <?php require_once 'header.html'; ?>
+    <!-- FIM TOPO SITE -->
 
 
     <!-- CONTEUDO PRINCIPAR -->
@@ -155,91 +116,8 @@
     </main>
 
     <!-- RODAPE -->
-    <footer class="fim-site">
-
-        <div class="flex-rodape">
-
-            <article class="sobre-rodape">
-
-                <a class="ancora-fatectools" href="index.html">
-                    <h1>Fatec <span>tools</span></h1>
-                </a>
-
-                <p>
-                    O site Fatec Tools foi para auxiliar os alunos para encontrar de forma rápida e facil as ferramentas
-                    que serão usadas ao longo de seus cursos, também encontrará artigos para estudo.
-                </p>
-
-                <a class="ancora-sublinhado" href="pagina_sobre_nos.html">
-                    <h3>Sobre Nós</h3>
-                </a>
-
-            </article>
-
-            <div id="traco-branco"> </div>
-
-            <article class="disciplinas-rodape">
-
-                <h1 id="Cursos-disciplinas">Cursos e disciplinas</h1>
-
-                <div>
-                    <ul>
-                        <li>
-                            <h4><a class="ancora-sublinhado" href="pagina_devWeb.html">Desenvolvimento Web</a></h4>
-                        </li>
-                        <li>
-                            <h4><a class="ancora-sublinhado" href="PAGE_designdigital.html">Design Digital</a></h4>
-                        </li>
-                        <li>
-                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Engenharia de Software</a></h4>
-                        </li>
-                        <li>
-                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Modelagem de Banco da Dados</a></h4>
-                        </li>
-                        <li>
-                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Sistemas operacionais</a></h4>
-                        </li>
-                        <li>
-                            <h4><a class="ancora-sublinhado" href="EM_BREVE.html">Algoritmos e Logica de Programção</a>
-                            </h4>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-
-            <div id="traco-branco"> </div>
-
-            <article class="contato-rodape">
-                <h1 id="entrar-contato">Contato</h1>
-                <p>
-                    Achou um erro? ou senão tem uma sugestão, entre em contato conosco!
-                </p>
-
-                <form action="#" method="post" autocomplete="off">
-                    <fieldset>
-
-                        <legend>Formulário de contato</legend>
-
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" required placeholder="Digite seu nome completo" />
-
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" required placeholder="Digite um e-mail válido" />
-
-                        <label for="subject">Assunto</label>
-                        <input type="text" name="subject" id="subject" />
-
-                        <label for="message">Mensagem</label>
-                        <textarea name="message" id="message" rows="7" required maxlength="1000" minlength="20"
-                            placeholder="Conte-nos tudo"></textarea>
-
-                        <input type="submit" class="btn-vermelho" value="Enviar">
-
-                    </fieldset>
-                </form>
-            </article>
-        </div>
-    </footer>
+    <?php require_once 'footer.html'; ?>
+    
 </body>
 
 <script src="js/menu-sanduiche.js"></script>
