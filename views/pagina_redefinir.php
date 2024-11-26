@@ -39,7 +39,7 @@
 
                 </div>
 
-                <p>voltar para tela de <a id="fazer-login" href="pagina_login.html">Login</a></p>
+                <p>voltar para tela de <a id="fazer-login" href="/fatec-tools/login">Login</a></p>
 
             </div>
 

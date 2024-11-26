@@ -708,10 +708,10 @@
 
                     </form>
 
-                    <p class="text-ancora">Esqueceu a senha? <a href="pagina_redefinir.html">Clique aqui</a></p>
+                    <p class="text-ancora">Esqueceu a senha? <a href="/fatec-tools/redefinir-senha">Clique aqui</a></p>
 
                     <p class="text-ancora">Ainda não tem uma conta? faça o seu cadastro <a
-                            href="pagina_cadastro.html">Aqui!</a></p>
+                            href="/fatec-tools/cadastro">Aqui!</a></p>
 
                 </div>
 

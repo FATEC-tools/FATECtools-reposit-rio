@@ -24,49 +24,7 @@
 
     <?php require_once 'header.html'; ?>
     <!-- FIM TOPO SITE -->
-
-    <header class="topo-site">
-
-        <nav class="topo-nav">
-
-            <div class="topo-direita">
-
-                <a class="ancora-fatectools" href="index.html">
-                    <h4>Fatec <span>tools</span></h4>
-                </a>
-
-                <h4 class="traco-header">|</h4>
-
-                <div class="menu-toggle" id="menu-toggle">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-
-                <ul class="nav-links ativo" id="nav-links">
-                    <div class="opcoes">
-                        <ul>
-                            <li><a class="text-ancora" href="index.html">Início</a></li>
-                            <li><a class="text-ancora" href="pagina_sobre_nos.html">Sobre nós</a></li>
-                            <li><a class="text-ancora" href="#Cursos-disciplinas">Cursos</a></li>
-                            <li><a class="text-ancora" href="#Cursos-disciplinas">Disciplinas</a></li>
-                            <li><a class="text-ancora" href="#entrar-contato">Contato</a></li>
-                            <li><a class="text-ancora" href="PAGE_PESQUISA.html">Pesquisar</a></li>
-
-                            <li class="perfil-div">
-                                <a href="pagina_login.html"><button class="btn-vermelho">Entrar</button></a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </ul>
-
-            </div>
-
-        </nav>
-    </header> <!-- FIM TOPO SITE -->
-
+     
     <!-- PARTE CONTEUDO PRINCIPAL -->
     <main class="estilo-fonte">
         <section id="imagem-app-site">
