@@ -40,7 +40,7 @@
 
                     </form>
 
-                    <p>Já tem uma conta? faça o Login <a id="fazer-login" href="pagina_login.html">Aqui</a></p>
+                    <p>Já tem uma conta? faça o Login <a id="fazer-login" href="/fatec-tools/login">Aqui</a></p>
 
                 </div>
 
