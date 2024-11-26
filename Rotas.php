@@ -63,5 +63,6 @@ $route->get("/sobre-nos", [SobreNosController::class, "inicio"]);
 
 
 $route->get("/pagina-aplicativo", [PaginaAppController::class, "inicio"]);
+$route->get("/pagina-perfil", [PerfilController::class, "inicio"]);
 
 ?>
