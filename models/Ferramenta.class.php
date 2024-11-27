@@ -9,9 +9,8 @@ class Ferramenta
         private string $nome = "",
         private string $descricao = "",
         private string $linkDownload = "",
-        private string $imagem = "", //Talvez vire Array 
+        private string $imagem = "",
         private string $situacao = "",
-
 
         //agregação 
         private $categoriaFerramenta = null,

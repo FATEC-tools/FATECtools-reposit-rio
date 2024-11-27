@@ -12,7 +12,7 @@ class FerramentaDAO extends Conexao
     public function inserir($ferramenta)
     {
 
-        $sql = 'INSERT INTO ferramentas (nome, descricao, link_download, situacao) VALUES(?, ?, ?, ?)';
+        $sql = 'INSERT INTO ferramentas (nome, descricao, link_download, id_cat_ferramenta, situacao, logoFerramenta) VALUES(?, ?, ?, ?, ?, ?)';
 
         try {
 
@@ -21,7 +21,10 @@ class FerramentaDAO extends Conexao
             $stm->bindValue(1, $ferramenta->getNome());
             $stm->bindValue(2, $ferramenta->getDescricao());
             $stm->bindValue(3, $ferramenta->getLinkDownload());
-            $stm->bindValue(4, $ferramenta->getSituacao());
+            $stm->bindValue(4, $ferramenta->getCategoriaFerramenta()->getIdCategoriaFerramenta());
+            $stm->bindValue(5, $ferramenta->getSituacao());
+            $stm->bindValue(6, $ferramenta->getImagem());
+
 
             $stm->execute();
 

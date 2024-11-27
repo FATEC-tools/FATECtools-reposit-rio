@@ -11,7 +11,7 @@ class CategoriaFerramentaDAO extends Conexao
     public function inserir($categoriaFerramenta)
     {
         //preparendo frase SQL, apos a preparação mudamos o "VALUE"
-        $sql = "INSERT INTO categorias_ferramentas(descritivo) VALUES(?)";
+        $sql = "INSERT INTO categorias_ferramentas(descritivo) VALUES (?)";
 
         try {
 
@@ -88,8 +88,6 @@ class CategoriaFerramentaDAO extends Conexao
             $stm = $this->db->prepare($sql);
 
             $stm->execute();
-
-            $retorno = $stm->fetchAll(PDO::FETCH_OBJ);
 
             $this->db = null;
 

@@ -22,12 +22,12 @@
 
                     <form action="index.html" method="get">
 
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" name="e-mail" placeholder="E-mail" required>
+                        <label for="Email">E-mail</label>
+                        <input type="email" name="Email" placeholder="E-mail" required>
 
 
-                        <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" placeholder="Usuario" required>
+                        <label for="nome_usuario">Usuario</label>
+                        <input type="text" name="nome_usuario" placeholder="Usuario" required>
 
 
                         <label for="senha">Senha</label>

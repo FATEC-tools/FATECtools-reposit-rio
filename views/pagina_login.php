@@ -698,8 +698,8 @@
 
                     <form action="index.html" method="get">
 
-                        <label for="senha">Usuario</label>
-                        <input type="text" name="usuario" placeholder="Usuario" required>
+                        <label for="nome_usuario">Usuario</label>
+                        <input type="text" name="nome_usuario" placeholder="Usuario" required>
 
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha" required>
