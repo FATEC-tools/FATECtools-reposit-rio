@@ -9,8 +9,9 @@ class Ferramenta
         private string $nome = "",
         private string $descricao = "",
         private string $linkDownload = "",
-        private string $imagem = "",
+        private string $logoFerramenta = "",
         private string $situacao = "",
+        //private array $imagens = [],
 
         //agregação 
         private $categoriaFerramenta = null,
@@ -58,14 +59,14 @@ class Ferramenta
         $this->linkDownload = $linkDownload;
     }
 
-    public function getImagem(): string
+    public function getLogoFerramenta(): string
     {
-        return $this->imagem;
+        return $this->logoFerramenta;
     }
 
-    public function setImagem(string $imagem): void
+    public function setLogoFerramenta(string $logo): void
     {
-        $this->imagem = $imagem;
+        $this->logoFerramenta = $logo;
     }
 
     public function getSituacao(): string

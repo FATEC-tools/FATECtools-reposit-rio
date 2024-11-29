@@ -54,6 +54,8 @@ $route->get("/design-web", [DesignWebController::class, "inicio"]);
 $route->get("/EM_BREVE", [EmBreveController::class, "inicio"]);
 
 $route->get("/pesquisar", [PesquisarController::class, "inicio"]);
+$route->post("/pesquisar", [PesquisarController::class, "inicio"]);
+
 
 $route->get("/login", [LoginController::class, "login"]);
 $route->get("/cadastro", [LoginController::class, "cadastrar"]);

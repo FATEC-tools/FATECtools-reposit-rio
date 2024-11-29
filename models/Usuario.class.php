@@ -8,6 +8,7 @@ class Usuario
         private string $nome_usuario = "",
         private string $email = "",
         private string $senha = "",
+        private string $nivel_usuario = ""
 
     ) {
     }

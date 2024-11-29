@@ -12,7 +12,7 @@ class FerramentaController
 
         if ($_POST) {
 
-            
+
 
             if (empty($_POST["nome"])) {
 
@@ -46,7 +46,7 @@ class FerramentaController
 
             }
 
-            if($_FILES["imagem"]["name"] == ""){
+            if ($_FILES["logoFerramenta"]["name"] == "") {
 
                 $msg[4] = '<p style="color: red;">Escolha uma Imagem</p>';
 
@@ -58,11 +58,13 @@ class FerramentaController
 
                 $categoria = new CategoriaFerramenta($_POST["categoria"]);
 
-                $ferramenta = new Ferramenta(nome: $_POST["nome"], linkDownload: $_POST["link"], descricao: $_POST["descricao"], categoriaFerramenta: $categoria, situacao: "Ativa", imagem: $_FILES["logoFerramenta"]["name"]);
+                $ferramenta = new Ferramenta(nome: $_POST["nome"], descricao: $_POST["descricao"], linkDownload: $_POST["link"], logoFerramenta: $_FILES["logoFerramenta"]["name"], situacao: "Ativa", categoriaFerramenta: $categoria);
 
                 $ferramentaDAO = new FerramentaDAO();
 
-                $ferramentaDAO->inserir($ferramenta);
+                $retorno = $ferramentaDAO->inserir($ferramenta);            
+
+                header("location:/fatec-tools/cadastrar-ferramenta?msg=$retorno");
 
                 die();
 
@@ -74,7 +76,8 @@ class FerramentaController
         $retorno = $categoriaFerramentaDAO->buscar_todas();
 
         require_once "views/cadastrar_ferramenta.php";
-    }
 
-}
+    } //fim metodo inserir
+
+}// fim classe
 ?>

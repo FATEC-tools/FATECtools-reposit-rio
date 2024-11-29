@@ -4,47 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+
+    <link rel="stylesheet" href="css/style_pagina_cadastro_ferramenta.css">
+
+
+    <title>Cadastrar Ferramenta</title>
+    <link rel="icon" href="img/ICON_SITE_FATECTOOLS.png" type="image/png">
+
+
 </head>
 
 <body>
 
-    <form action="/fatec-tools/cadastrar-ferramenta" method="post" enctype="multipart/form-data">
 
-        <label for="nomeFerramenta">Nome:</label>
-        <input type="text" id="nomeFerramenta" name="nome" required><br><br>
+    <?php // HEADER
+    require_once "header.html";
+    ?>
 
-        <label for="linkDonwload">Link para download:</label>
-        <input type="url" id="linkDonwload" name="link" required><br><br>
+    <main class="estilo-fonte">
 
-        <label for="descricao">Descrição:</label>
-        <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+        <div class="container flex-center">
 
-        <label for="categoria">Categoria:</label>
+            <form class="form-cadastrar-ferramenta" action="/fatec-tools/cadastrar-ferramenta" method="post"
+                enctype="multipart/form-data">
 
-        <select id="categoria" name="categoria">
-            <option value="0">Escolha uma categoria</option>
+                <h2>Cadastrar Ferramenta</h2>
+                <br>
 
-            <?php
+                <div class="campos flex-lado-a-lado">
+                    <div class="container-left container-left-right">
 
-            foreach ($retorno as $dado) {
+                        <div class="img-logo-ferramenta">
+                            <img class="img-cadastrar-ferramenta" src="" id="img">
+                            <input type="file" name="logoFerramenta" onchange="mostrar(this)">
+                        </div>
 
-                echo "<option value='{$dado->id_cat_ferramenta}'>{$dado->descricao}</option>";
-            }
-            ?>
+                        <label for="nomeFerramenta">Nome:</label>
+                        <input type="text" id="nomeFerramenta" name="nome" required>
 
-        </select><br><br>
+                    </div>
 
-        <input type="file" name="logoFerramenta"  onchange="mostrar(this)">
+                    <div class="container-right container-left-right">
 
-        <br>
+                        <label for="linkDonwload">Link para download:</label>
+                        <input type="url" id="linkDonwload" name="link" required>
 
-        <img src="" id="img">
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao" rows="7" cols="50" required></textarea>
 
-        <br>
+                        <label for="categoria">Categoria:</label>
 
-        <input type="submit" value="Adicionar Ferramenta">
-    </form>
+
+                        <select id="categoria" name="categoria">
+                            <option value="0">Escolha uma categoria</option>
+                            <?php //Listar as Categorias
+                            foreach ($retorno as $dado) {
+
+                                echo "<option value='{$dado->id_cat_ferramenta}'>{$dado->descricao}</option>";
+
+                            }
+                            ?>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="flex-lado-a-lado">
+                    <input class="btn-vermelho btn-lado-a-lado" type="submit" value="Adicionar Ferramenta">
+                    <input class="btn-vermelho btn-lado-a-lado" type="reset" value="Limpar Campos">
+                </div>
+
+                <?php //MENSAGEM DE RETORNO
+                if (isset($_GET["msg"])) {
+                    echo "{$_GET["msg"]}";
+
+                }
+                ?>
+
+            </form>
+        </div>
+    </main>
+
+
+    <?php // FOOTER
+    require_once "footer.html";
+    ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
@@ -54,8 +100,8 @@
                 reader.onload = function (e) {
                     $('#img')
                         .attr('src', e.target.result)
-                        .width(170)
-                        .height(100);
+                        .width(300)
+                        .height(300);
                 };
                 reader.readAsDataURL(img.files[0]);
             }

@@ -29,10 +29,11 @@
 
     <!-- PESQUISAR -->
     <main>
-        <form class="example" style="background-color: #1c2957;" action="x">
+        <form class="/fatec-tools/pesquisar" style="background-color: #1c2957;" action="post">
             <input type="text" style="margin: 0;" placeholder="Pesquisar..." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
+
 
         <article class="inicio-aplicativos-relevantes">
             <h2>Sugestões para você</h2>
@@ -102,12 +103,11 @@
 
             </div>
         </article>
-
     </main>
 
     <!-- RODAPE -->
     <?php require_once 'footer.html'; ?>
-    
+
 </body>
 
 <script src="js/menu-sanduiche.js"></script>
