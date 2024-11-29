@@ -1,0 +1,26 @@
+input[type="password"],
+textarea {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    border-bottom-color: var(--branco-base);
+}
+
+#profile{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-vermelho{
+    width: 120px;
+    height: 35px;
+}
+
+#formPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+
+
