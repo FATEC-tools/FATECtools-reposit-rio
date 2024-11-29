@@ -25,7 +25,7 @@
 
 <body>
     <!-- INICIO TOPO SITE -->
-    <?php require_once 'header.html'; ?>
+    <?php require_once 'header.php'; ?>
      <!-- FIM TOPO SITE -->
 
     <main class="estilo-fonte">

@@ -34,6 +34,12 @@ class Usuario
     {
         return $this->senha;
     }
+
+    public function getNivelUsuario()
+	{
+		return $this->nivel_usuario;
+	}
 }
+    
 
 ?>

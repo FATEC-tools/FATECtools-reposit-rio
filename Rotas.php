@@ -71,4 +71,10 @@ $route->get("/pagina-perfil", [PerfilController::class, "inicio"]);
 $route->get("/cadastrar-ferramenta", [FerramentaController::class, "inserir"]);
 $route->post("/cadastrar-ferramenta", [FerramentaController::class, "inserir"]);
 
+$route->get("/login",[UsuarioController::class,"verificar_login"]);
+$route->post("/login",[UsuarioController::class,"verificar_login"]);
+$route->get("/logout",[UsuarioController::class,"logout"]);
+$route->get("/inserir_usuario",[UsuarioController::class,"inserir"]);
+$route->post("/inserir_usuario",[UsuarioController::class,"inserir"]);
+
 ?>

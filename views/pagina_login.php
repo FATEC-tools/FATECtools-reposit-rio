@@ -696,13 +696,14 @@
 
                 <div class="fielholder">
 
-                    <form action="index.html" method="get">
+                    <form action="/fatec-tools/login" method="post">
 
-                        <label for="nome_usuario">Usuario</label>
-                        <input type="text" name="nome_usuario" placeholder="Usuario" required>
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" placeholder="E-mail" required>                    
 
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha" required>
+                        
 
                         <input class="btn-vermelho" type="submit" value="Entrar">
 

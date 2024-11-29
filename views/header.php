@@ -1,3 +1,10 @@
+<?php
+if(!isset($_SESSION)) {
+    session_start();
+}
+
+?>
+
 <header class="topo-site">
 
     <nav class="topo-nav">
@@ -26,9 +33,15 @@
                         <li><a class="text-ancora" href="#entrar-contato">Contato</a></li>
                         <li><a class="text-ancora" href="/fatec-tools/pesquisar">Pesquisar</a></li>
 
-                        <li class="perfil-div">
-                            <a href="/fatec-tools/login"><button class="btn-vermelho">Entrar</button></a>
-                        </li>
+                        <?php if (isset($_SESSION["id_usuario"])): ?>
+                            <li class="perfil-div">
+                                <a href="/fatec-tools/logout"><button class="btn-vermelho">Sair</button></a>
+                            </li>
+                        <?php else: ?>
+                            <li class="perfil-div">
+                                <a href="/fatec-tools/login"><button class="btn-vermelho">Entrar</button></a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
 
                 </div>

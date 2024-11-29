@@ -19,7 +19,7 @@
 
 
     <?php // HEADER
-    require_once "header.html";
+    require_once "header.php";
     ?>
 
     <main class="estilo-fonte">
