@@ -40,12 +40,12 @@
                             <input type="file" name="logoFerramenta" onchange="mostrar(this)">
                         </div>
 
-                        <label for="nomeFerramenta">Nome:</label>
-                        <input type="text" id="nomeFerramenta" name="nome" required>
-
                     </div>
 
                     <div class="container-right container-left-right">
+
+                        <label for="nomeFerramenta">Nome:</label>
+                        <input type="text" id="nomeFerramenta" name="nome" required>
 
                         <label for="linkDonwload">Link para download:</label>
                         <input type="url" id="linkDonwload" name="link" required>
@@ -78,8 +78,9 @@
 
                 <?php //MENSAGEM DE RETORNO
                 if (isset($_GET["msg"])) {
-                    echo "{$_GET["msg"]}";
+                    echo "<p>{$_GET["msg"]}</p>";
 
+                    echo '<p>Ver lista de ferramentas <a href="/fatec-tools/listar-ferramentas" class="text-link">Clique aqui</a>';
                 }
                 ?>
 
