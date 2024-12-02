@@ -23,76 +23,79 @@
 
     if (isset($_SESSION["id_usuario"])) {
 
-        if ($_SESSION["nivel_usuario"] == 'Admin' ||$_SESSION["nivel_usuario"] == 'Professor') {
-
+        if ($_SESSION["nivel_usuario"] == 'Admin' || $_SESSION["nivel_usuario"] == 'Professor') {
             ?>
 
             <main class="estilo-fonte">
 
                 <div class="container flex-center">
 
-                    <form class="form-cadastrar-ferramenta" action="/fatec-tools/cadastrar-ferramenta" method="post"
+                    <form class="form-cadastrar-ferramenta" action="/fatec-tools/alterar-ferramenta" method="post"
                         enctype="multipart/form-data">
 
-                        <h2>Cadastrar Ferramenta</h2>
+                        <h2>Editar Ferramenta</h2>
                         <br>
 
                         <div class="campos flex-lado-a-lado">
                             <div class="container-left container-left-right">
 
                                 <div class="img-logo-ferramenta">
-                                    <img class="img-cadastrar-ferramenta" src="" id="img">
+                                    <img class="img-cadastrar-ferramenta"
+                                        src="img/ICONES_APP/<?php echo $retorno[0]->logoFerramenta; ?>" id="img">
                                     <input type="file" name="logoFerramenta" onchange="mostrar(this)">
                                 </div>
-                                <div style="color:red;font-size:11px;"><?php echo $msg[4]; ?></div>
+
+                                <?php echo $msg[4]; ?>
 
                             </div>
 
                             <div class="container-right container-left-right">
 
-                                <label for="nomeFerramenta">Nome:</label>
-                                <input type="text" id="nomeFerramenta" name="nome" required>
-                                <div style="color:red;font-size:11px;"><?php echo $msg[0]; ?></div>
+                                <input type="hidden" name="id_ferramenta" value="<?php echo $retorno[0]->id_ferramenta; ?>">
 
-                                <label for="linkDonwload">Link para download:</label>
-                                <input type="url" id="linkDonwload" name="link" required>
-                                <div style="color:red;font-size:11px;"><?php echo $msg[1]; ?></div>
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" value="<?php echo $retorno[0]->nome; ?>">
+
+                                <?php echo $msg[0]; ?>
+
+                                <label for="link">Link para download:</label>
+                                <input type="url" id="link" name="link" value="<?php echo $retorno[0]->link_download; ?>">
+
+                                <?php echo $msg[1]; ?>
 
                                 <label for="descricao">Descrição:</label>
-                                <textarea id="descricao" name="descricao" rows="7" cols="50" required></textarea>
-                                <div style="color:red;font-size:11px;"><?php echo $msg[2]; ?></div>
+                                <textarea id="descricao" name="descricao" rows="7"
+                                    cols="50"> <?php echo $retorno[0]->descricao; ?></textarea>
+
+                                <?php echo $msg[2]; ?>
 
                                 <label for="categoria">Categoria:</label>
 
 
                                 <select id="categoria" name="categoria">
-                                    <option value="0">Escolha uma categoria</option>
+                                    <option value="<?php echo $retorno[0]->id_cat_ferramenta; ?>">
+                                        <?php echo "{$retorno[0]->descritivo}"; ?>
+                                    </option>
+
                                     <?php //Listar as Categorias
-                                            foreach ($retorno as $dado) {
+                                            foreach ($categorias as $dado) {
 
                                                 echo "<option value='{$dado->id_cat_ferramenta}'>{$dado->descricao}</option>";
 
                                             }
                                             ?>
                                 </select>
-                                <div style="color:red;font-size:11px;"><?php echo $msg[3]; ?></div>
+
+                                <?php echo $msg[3]; ?>
 
                             </div>
 
                         </div>
 
                         <div class="flex-lado-a-lado">
-                            <input class="btn-vermelho btn-lado-a-lado" type="submit" value="Adicionar Ferramenta">
-                            <input class="btn-vermelho btn-lado-a-lado" type="reset" value="Limpar Campos">
+                            <input class="btn-vermelho btn-lado-a-lado" type="submit" value="Salvar Alterações">
+                            <input class="btn-vermelho btn-lado-a-lado" type="reset" value="Cancelar Alterações">
                         </div>
-
-                        <?php //MENSAGEM DE RETORNO
-                                if (isset($_GET["msg"])) {
-                                    echo "<p>{$_GET["msg"]}</p>";
-
-                                    echo '<p>Ver lista de ferramentas <a href="/fatec-tools/listar-ferramentas" class="text-link">Clique aqui</a>';
-                                }
-                                ?>
 
                     </form>
                 </div>
@@ -109,7 +112,6 @@
 
         header("Location: /fatec-tools/login");
     }
-
     require_once "footer.html";
     ?>
 

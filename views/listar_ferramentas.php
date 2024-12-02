@@ -20,61 +20,84 @@
 
     <?php // HEADER
     require_once "header.php";
-    ?>
 
-    <main class="estilo-fonte">
+    if (isset($_SESSION["id_usuario"])) {
 
-        <div class="container flex-center">
+        if ($_SESSION["nivel_usuario"] == 'Admin' ||$_SESSION["nivel_usuario"] == 'Professor') {
 
-            <h2>Lista de Ferramentas adicionadas</h2>
+            ?>
 
-            <table class="table-listar-ferramentas">
+            <main class="estilo-fonte">
 
-                <thead>
-                    <tr>
-                        <th>Logo</th>
-                        <th>Nome</th>
-                        <th>Categoria</th>
-                        <th>Situação</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
+                <div class="container flex-center">
 
-                <tbody>
+                    <h2 class="titulo-listar">Lista de Ferramentas cadastradas</h2>
+
                     <?php
-                    foreach ($retorno as $dado) {
-                        echo
-                            "
-                        <tr>
-                        <td><img src='img/ICONES_APP/{$dado->logoFerramenta}' alt='Logo da Ferramenta' width='70px'></td>
-                        <td>{$dado->nome}</td>
-                        <td>{$dado->descritivo}</td>
-                        <td>{$dado->situacao}</td>
-                        <td>
-                        <a href='/fatec-tools/alterar_ferramenta?id={$dado->id_ferramenta}' class='btn'>Editar</a>";
-
-                        if ($dado->situacao == "Ativa") {
-                            //inativar
-                            echo "<a href='/fatec-tools/alterar-situacao?idferramenta={$dado->id_ferramenta}&situacao=Inativa' class='btn btn-inativar'>Inativar</a>";
-                        } else {
-                            //ativar
-                            echo "<a href='/fatec-tools/alterar-situacao?idferramenta={$dado->id_ferramenta}&situacao=Ativa' class='btn btn-ativar'>Ativar</a>";
-                        }
-
-                        echo "</td></tr>";
-
+                    if (isset($_GET["msg"])) {
+                        echo "<p>{$_GET["msg"]}</p>";
+                        unset($_GET["msg"]);
                     }
                     ?>
 
-                </tbody>
+                    <table class="table-listar-ferramentas">
 
-            </table>
+                        <thead>
+                            <tr>
+                                <th>Logo</th>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Situação</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
 
-        </div>
+                        <tbody>
+                            <?php
+                            foreach ($retorno as $dado) {
+                                echo
+                                    "
+                        <tr>
+                        <td><img src='img/ICONES_APP/{$dado->logoFerramenta}' alt='Logo da Ferramenta' width='70px'></td>
+                        <td>{$dado->nome}</td>
+                        <td>{$dado->descricao}</td>
+                        <td>{$dado->situacao}</td>
+                        <td>
+                        <a href='/fatec-tools/alterar-ferramenta?id={$dado->id_ferramenta}' class='btn'>Editar</a>";
 
-    </main>
+                                if ($dado->situacao == "Ativa") {
+                                    //inativar
+                                    echo "<a href='/fatec-tools/alterar-situacao?idferramenta={$dado->id_ferramenta}&situacao=Inativa' class='btn btn-inativar'>Inativar</a>";
+                                } else {
+                                    //ativar
+                                    echo "<a href='/fatec-tools/alterar-situacao?idferramenta={$dado->id_ferramenta}&situacao=Ativa' class='btn btn-ativar'>Ativar</a>";
+                                }
 
-    <?php // footer
+                                echo "</td></tr>";
+
+                            }
+                            ?>
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+            </main>
+
+        <?php // footer
+        } else {
+
+            header("Location: /fatec-tools");
+        }
+    } else {
+
+        header("Location: /fatec-tools/login");
+    }
+
+
     require_once "footer.html";
     ?>
 

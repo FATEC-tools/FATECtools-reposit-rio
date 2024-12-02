@@ -22,17 +22,21 @@
 <body>
     <!-- INICIO TOPO SITE -->
     <?php require_once 'header.php'; ?>
-     <!-- FIM TOPO SITE -->
+    <!-- FIM TOPO SITE -->
 
     <!-- INICIO CONTEUDO PRINCIPAL -->
     <main>
         <section class="area-download">
             <!-- AREA PARA DIRENCIONAMENTO PARA SITE DE DOWNLOAD -->
             <div class="card-instalar">
+
                 <div class="icon-ir-site margem-entre-ele">
-                    <img id="image-icon-app" src="img/ICONES_APP/visualcode.png" alt="">
+
+                    <img id="image-icon-app" src="img/ICONES_APP/<?php echo "{$retorno[0]->logoFerramenta}"; ?>" alt="">
+
                     <div class="text-instalar">
-                        <h2>Visual Studios Code</h2>
+
+                        <h2><?php echo "{$retorno[0]->nome}"; ?></h2>
 
                         <!-- CODIGO ESTRELAS AVALIAÇÃO -->
                         <div class="rating">
@@ -74,7 +78,10 @@
                         </div>
                     </div>
 
-                    <a href="https://code.visualstudio.com/download" target="_blank"><button class="btn-instalar">ir
+                    <br>
+
+                    <a href="<?php echo "{$retorno[0]->link_download}"; ?>" target="_blank"><button
+                            class="btn-instalar">ir
                             para o site</button></a>
                 </div>
                 <div class="area-imagens margem-entre-ele">
@@ -133,9 +140,7 @@
                 <div class="descricao">
                     <h2>Descrição</h2>
                     <p>
-                        O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux
-                        e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de
-                        sintaxe, complementação inteligente de código, snippets e refatoração de código.
+                        <?php echo "{$retorno[0]->descricao}"; ?>
                     </p>
                 </div>
 
@@ -342,7 +347,7 @@
 
     <!-- RODAPE -->
     <?php require_once 'footer.html'; ?>
-    
+
 </body>
 
 <script src="js/menu-sanduiche.js"></script>

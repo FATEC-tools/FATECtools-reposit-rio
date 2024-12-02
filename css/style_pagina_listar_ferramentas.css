@@ -18,6 +18,15 @@ main {
     flex-direction: column;
 }
 
+.titulo-listar {
+    color: white;
+    background: #25356F;
+    padding: .5% 5%;
+    border-radius: 30vh;
+    border: solid 2px white;
+    font-size: 30px;
+    font-weight: 400;
+}
 
 .table-listar-ferramentas {
     width: 85%;
@@ -41,8 +50,8 @@ main {
         padding: 10px;
         border: 2px solid white;
         text-align: center;
-        
-        img{
+
+        img {
             border-radius: 10px;
         }
     }
@@ -60,7 +69,7 @@ main {
         transition: .2s;
     }
 
-    
+
 
     .btn:hover {
         color: var(--vermelho-forte);
@@ -85,3 +94,4 @@ main {
         border-radius: 20px;
     }
 }
+

@@ -38,9 +38,9 @@
 
     <main class="estilo-fonte">
 
-        <div class="container flex-center">
+        <div class="container flex-center flex-column">
 
-            <form class="form-perfil" action="" method="" enctype="multipart/form-data">
+            <form class="form-perfil" action="" method="post" enctype="multipart/form-data">
 
                 <h2>Perfil Usuario</h2>
                 <br>
@@ -53,12 +53,12 @@
 
                 <div class="flex-lado-a-lado">
 
-                    <div class="flex-collum container-left">
+                    <div class="flex-column container-left">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha" readonly><br>
                     </div>
 
-                    <div class="flex-collum container-right">
+                    <div class="flex-column container-right">
                         <label for="nivelUsuario">Nivel Usuario</label>
                         <input type="text" name="nivelUsuario" id="nivelUsuario" <?php echo "value='{$usuario->nivel_usuario}'" ?>readonly><br>
                     </div>
@@ -69,10 +69,20 @@
                 <button type="button" class="btn btn-vermelho" id="salvarBtn" style="display: none;">Salvar
                     Alterações</button>
 
-
-
-
             </form>
+
+            <?php
+            if ($_SESSION["nivel_usuario"] == 'Admin' || $_SESSION["nivel_usuario"] == 'Professor') {
+                ?>
+                <div class="flex-center container-acoes">
+                    <a href="/fatec-tools/listar-ferramentas" class="btn btn-vermelho">Listar Ferramentas</a>
+                    <a href="/fatec-tools/cadastrar-ferramenta" class="btn btn-vermelho">Cadastrar Ferramenta</a>
+                    <?php if ($_SESSION["nivel_usuario"] == 'Admin') { ?>
+                        <a href="/fatec-tools/listar-usuarios" class="btn btn-vermelho">Listar Usuarios</a>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+
 
         </div>
 
@@ -106,7 +116,7 @@
         </script>
 
     </main>
-    <div style="height: 80px;"></div>
+
     <!-- RODAPE -->
     <?php require_once 'footer.html'; ?>
     <!-- FIM RODAPE -->

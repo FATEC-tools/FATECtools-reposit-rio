@@ -24,7 +24,7 @@
 
     <?php require_once 'header.php'; ?>
     <!-- FIM TOPO SITE -->
-     
+
     <!-- PARTE CONTEUDO PRINCIPAL -->
     <main class="estilo-fonte">
         <section id="imagem-app-site">
@@ -81,40 +81,20 @@
             <h2>Aplicativos Relevantes</h2>
             <div class="app-relevante flex-lado-quebra">
 
-                <div class="btn-app">
-                    <a href="/fatec-tools/pagina-aplicativo"><img src="img/ICONES_APP/visualcode.png" alt="imagem do site ou app">
-                        <h3>Visual Studios <br>Code</h3>
-                    </a>
-                </div>
+                <?php 
+                foreach ($retorno as $dado) {
+                    ?>
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_VISUALG.html"><img src="img/ICONES_APP/visualg.webp" alt="imagem do site ou app">
-                        <h3>VisuALG</h3>
-                    </a>
-                </div>
+                    <div class="btn-app">
+                        <a href="<?php echo "/fatec-tools/pagina-aplicativo?id={$dado->id_ferramenta}"; ?>"><img
+                                src="img/ICONES_APP/<?php echo "{$dado->logoFerramenta}"; ?>" alt="imagem do site ou app">
+                            <h3><?php echo "{$dado->nome}"; ?></h3>
+                        </a>
+                    </div>
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_BRMODELO.html"><img src="img/ICONES_APP/brmodelo.jpg" alt="imagem do site ou app">
-                        <h3>brModelo</h3>
-                    </a>
-                </div>
-
-                <div class="btn-app">
-                    <a href="PAGE_APP_FIGMA.html"><img src="img/ICONES_APP/figma.webp" alt="imagem do site ou app">
-                        <h3>Figma</h3>
-                    </a>
-                </div>
-
-                <div class="btn-app">
-                    <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
-                        <h3>Oracle</h3>
-                    </a>
-                </div>
-
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/git.png" alt="imagem do site ou app">
-                    <h3>Git</h3>
-                </div>
+                    <?php
+                }
+                ?>
 
             </div>
         </article>
