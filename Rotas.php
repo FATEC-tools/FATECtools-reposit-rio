@@ -80,4 +80,6 @@ $route->get("/logout",[UsuarioController::class,"logout"]);
 $route->get("/inserir_usuario",[UsuarioController::class,"inserir"]);
 $route->post("/inserir_usuario",[UsuarioController::class,"inserir"]);
 
+$route->get("/alterar-situacao", [FerramentaController::class, "alterar_situacao"]);
+
 ?>

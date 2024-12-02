@@ -264,7 +264,28 @@ class FerramentaDAO extends Conexao
         }
     }
 
+    public function alterarSituacao($idFerramenta, $situacao)
+    {
+        $sql = "UPDATE ferramentas SET situacao = ? WHERE id_ferramenta = ?";
 
-}//Fim Classe
+        try {
+            $stm = $this->db->prepare($sql);
+            $stm->bindValue(1, $situacao);
+            $stm->bindValue(2, $idFerramenta);
+            $stm->execute();
+
+            $this->db = null;
+            
+            return "Situação da ferramenta atualizada com sucesso!";
+        } catch (PDOException $e) {
+            echo $e->getCode();
+            echo $e->getMessage();
+            die();
+        }
+    }
+
+
+
+}
 
 ?>

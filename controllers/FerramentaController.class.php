@@ -170,5 +170,29 @@ class FerramentaController
         require_once "views/editar_ferramenta.php";
     }
 
-}// fim classe
+    public function alterar_situacao()
+    {
+        
+        if (isset($_GET['idferramenta']) && isset($_GET['situacao'])) {
+            $idFerramenta = $_GET['idferramenta'];
+            $situacao = $_GET['situacao'];
+
+            if ($situacao == 'Ativa' || $situacao == 'Inativa') {
+                $ferramentaDAO = new FerramentaDAO();
+                $mensagem = $ferramentaDAO->alterarSituacao($idFerramenta, $situacao);
+                
+                
+                header("Location: /fatec-tools/?msg={$mensagem}");
+            } else {
+                
+                header("Location: /listar-ferramentas?msg=Situação inválida");
+            }
+        } else {
+            
+            header("Location: /listar-ferramentas?msg=Dados incompletos");
+        }
+    }
+
+
+}
 ?>
