@@ -29,80 +29,102 @@
 
     <!-- PESQUISAR -->
     <main>
-        <form class="/fatec-tools/pesquisar" style="background-color: #1c2957;" action="post">
+        <form class="form-pesquisar" style="background-color: #1c2957;" action="/fatec-tools/pesquisar" method="post">
+
             <input type="text" style="margin: 0;" placeholder="Pesquisar..." name="search">
+
             <button type="submit"><i class="fa fa-search"></i></button>
+
         </form>
 
 
-        <article class="inicio-aplicativos-relevantes">
-            <h2>Sugestões para você</h2>
-            <div class="app-relevante flex-lado-quebra">
+        <article class="inicio-aplicativos-relevantes estilo-fonte">
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_VSCODE.html"><img src="img/ICONES_APP/visualcode.png" alt="imagem do site ou app">
-                        <h3>Visual Studios <br>Code</h3>
-                    </a>
+            <?php
+            if (isset($_GET)) {
+            ?>
+
+                <h2>Sugestões para você</h2>
+
+                <div class="app-relevante flex-lado-quebra">
+
+                    <div class="btn-app">
+                        <a href="PAGE_APP_VSCODE.html"><img src="img/ICONES_APP/visualcode.png" alt="imagem do site ou app">
+                            <h3>Visual Studios <br>Code</h3>
+                        </a>
+                    </div>
+
+                    <div class="btn-app">
+                        <a href="PAGE_APP_VISUALG.html"><img src="img/ICONES_APP/visualg.webp" alt="imagem do site ou app">
+                            <h3>VisuALG</h3>
+                        </a>
+                    </div>
+
+                    <div class="btn-app">
+                        <a href="PAGE_APP_BRMODELO.html"><img src="img/ICONES_APP/brmodelo.jpg" alt="imagem do site ou app">
+                            <h3>brModelo</h3>
+                        </a>
+                    </div>
+
+                    <div class="btn-app">
+                        <a href="PAGE_APP_FIGMA.html"><img src="img/ICONES_APP/figma.webp" alt="imagem do site ou app">
+                            <h3>Figma</h3>
+                        </a>
+                    </div>
+
+                    <div class="btn-app">
+                        <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
+                            <h3>Oracle</h3>
+                        </a>
+                    </div>
+
+                    <div class="btn-app">
+                        <img src="img/ICONES_APP/git.png" alt="imagem do site ou app">
+                        <h3>Git</h3>
+                    </div>
+
+                    <div class="btn-app">
+                        <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
+                            <h3>Oracle</h3>
+                        </a>
+                    </div>
+
+                    <div class="btn-app">
+                        <img src="img/ICONES_APP/aobe color.png" alt="imagem do site ou app">
+                        <h3>Adobe Color</h3>
+                    </div>
+                    <div class="btn-app">
+                        <img src="img/ICONES_APP/grid calculator.png" alt="imagem do site ou app">
+                        <h3>Grid Calculator</h3>
+                    </div>
+                    <div class="btn-app">
+                        <img src="img/ICONES_APP/Shape Type.png" alt="imagem do site ou app">
+                        <h3>Shape Type</h3>
+                    </div>
+                    <div class="btn-app">
+                        <img src="img/ICONES_APP/Kern Type.png" alt="imagem do site ou app">
+                        <h3>Kern Type</h3>
+                    </div>
+                    <div class="btn-app">
+                        <img src="img/ICONES_APP/the bezier game.png" alt="imagem do site ou app">
+                        <h3>The Bézier Game</h3>
+                    </div>
+
                 </div>
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_VISUALG.html"><img src="img/ICONES_APP/visualg.webp" alt="imagem do site ou app">
-                        <h3>VisuALG</h3>
-                    </a>
-                </div>
+            <?php
+            }
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_BRMODELO.html"><img src="img/ICONES_APP/brmodelo.jpg" alt="imagem do site ou app">
-                        <h3>brModelo</h3>
-                    </a>
-                </div>
+            if ($_POST) {
+            ?>
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_FIGMA.html"><img src="img/ICONES_APP/figma.webp" alt="imagem do site ou app">
-                        <h3>Figma</h3>
-                    </a>
-                </div>
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
-                        <h3>Oracle</h3>
-                    </a>
-                </div>
 
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/git.png" alt="imagem do site ou app">
-                    <h3>Git</h3>
-                </div>
+            <?php }
+            ?>
 
-                <div class="btn-app">
-                    <a href="PAGE_APP_ORACLE.html"><img src="img/ICONES_APP/oracle.png" alt="imagem do site ou app">
-                        <h3>Oracle</h3>
-                    </a>
-                </div>
-
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/aobe color.png" alt="imagem do site ou app">
-                    <h3>Adobe Color</h3>
-                </div>
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/grid calculator.png" alt="imagem do site ou app">
-                    <h3>Grid Calculator</h3>
-                </div>
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/Shape Type.png" alt="imagem do site ou app">
-                    <h3>Shape Type</h3>
-                </div>
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/Kern Type.png" alt="imagem do site ou app">
-                    <h3>Kern Type</h3>
-                </div>
-                <div class="btn-app">
-                    <img src="img/ICONES_APP/the bezier game.png" alt="imagem do site ou app">
-                    <h3>The Bézier Game</h3>
-                </div>
-
-            </div>
         </article>
+
     </main>
 
     <!-- RODAPE -->
